@@ -1,0 +1,525 @@
+/* ── 設計トークン ────────────────────────────────
+   藍（当前）· 松葉（掌握）· 朱（错过），配纸色底与墨色字。
+   浅色为基准，深色只重定义 token，不重写组件规则。      */
+:root {
+  --paper: #f1f0ea;
+  --card: #fcfbf7;
+  --card-2: #e9e7de;
+  --ink: #1e2328;
+  --ink-soft: #5b6570;
+  --ink-faint: #8d96a0;
+  --rule: #d9d6cb;
+  --ai: #17608a;
+  --matsu: #47734c;
+  --matsu-wash: #e1ebe0;
+  --shu: #a8443f;
+  --shu-wash: #f3e2df;
+  --on-accent: #fcfbf7;
+  --shadow: 0 1px 2px rgba(30, 35, 40, 0.06), 0 8px 24px -12px rgba(30, 35, 40, 0.22);
+
+  --f-mincho: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", "Songti SC", serif;
+  --f-gothic: "Zen Kaku Gothic New", "Hiragino Sans", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14181b;
+    --card: #1d2328;
+    --card-2: #262d33;
+    --ink: #e9e6de;
+    --ink-soft: #a2adb6;
+    --ink-faint: #6c7780;
+    --rule: #2e363c;
+    --ai: #7cbbde;
+    --matsu: #86b78b;
+    --matsu-wash: #1c2a1f;
+    --shu: #de908a;
+    --shu-wash: #33201f;
+    --on-accent: #12191e;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 28px -14px rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #14181b;
+  --card: #1d2328;
+  --card-2: #262d33;
+  --ink: #e9e6de;
+  --ink-soft: #a2adb6;
+  --ink-faint: #6c7780;
+  --rule: #2e363c;
+  --ai: #7cbbde;
+  --matsu: #86b78b;
+  --matsu-wash: #1c2a1f;
+  --shu: #de908a;
+  --shu-wash: #33201f;
+  --on-accent: #12191e;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 28px -14px rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-gothic);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ── レイアウト ───────────────────────────────── */
+.wrap {
+  max-width: 620px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 26px 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ── 見出し ──────────────────────────────────── */
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.masthead h1 {
+  font-family: var(--f-mincho);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.masthead .sub {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.roundtag {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ai);
+  border: 1px solid var(--ai);
+  border-radius: 2px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── 進捗マス ─────────────────────────────────── */
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 3px;
+}
+
+@media (max-width: 460px) {
+  .grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+.cell {
+  aspect-ratio: 1;
+  max-width: 100%;
+  border-radius: 1px;
+  background: var(--card-2);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cell.ok {
+  background: var(--matsu);
+}
+
+.cell.miss {
+  background: var(--shu);
+}
+
+.cell.now {
+  background: var(--ai);
+  transform: scale(1.35);
+  border-radius: 2px;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.legend b {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.legend .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  margin-right: 5px;
+  vertical-align: 1px;
+}
+
+.dot-ok {
+  background: var(--matsu);
+}
+
+.dot-miss {
+  background: var(--shu);
+}
+
+.dot-todo {
+  background: var(--card-2);
+}
+
+/* ── 単語カード ───────────────────────────────── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  box-shadow: var(--shadow);
+  padding: 34px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 300px;
+}
+
+.kana-note {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--ink-faint);
+}
+
+.kana {
+  font-family: var(--f-mincho);
+  font-weight: 500;
+  font-size: clamp(30px, 8.4vw, 52px);
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kanji {
+  font-family: var(--f-mincho);
+  font-weight: 700;
+  font-size: clamp(34px, 9vw, 56px);
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: var(--ai);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.gloss {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.example {
+  border-top: 1px solid var(--rule);
+  padding-top: 14px;
+  font-family: var(--f-mincho);
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+
+.example::before {
+  content: "例文";
+  display: block;
+  font-family: var(--f-gothic);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* ── ボタン ──────────────────────────────────── */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions-done {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-family: var(--f-gothic);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--ai);
+  outline-offset: 2px;
+}
+
+.btn-reveal {
+  flex: 1;
+  background: var(--ai);
+  border-color: var(--ai);
+  color: var(--on-accent);
+}
+
+.btn-reveal:hover {
+  filter: brightness(1.08);
+}
+
+.btn-ok,
+.btn-miss {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.btn-ok {
+  border-color: var(--matsu);
+  color: var(--matsu);
+}
+
+.btn-ok:hover {
+  background: var(--matsu-wash);
+}
+
+.btn-miss {
+  border-color: var(--shu);
+  color: var(--shu);
+}
+
+.btn-miss:hover {
+  background: var(--shu-wash);
+}
+
+.key {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.hint {
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+}
+
+/* ── 完走 ────────────────────────────────────── */
+.done {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  padding-block: 18px;
+}
+
+.done .seal {
+  font-family: var(--f-mincho);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--shu);
+  border: 2px solid var(--shu);
+  border-radius: 3px;
+  padding: 14px 16px;
+  line-height: 1.15;
+  writing-mode: vertical-rl;
+}
+
+.done p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ── 錯題帳 ──────────────────────────────────── */
+.ledger {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ledger-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ledger h2 {
+  font-family: var(--f-mincho);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.ledger-scroll {
+  overflow-x: auto;
+}
+
+.ledger table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ledger td,
+.ledger th {
+  text-align: left;
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.ledger th {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--ink-faint);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ledger .r-kana {
+  font-family: var(--f-mincho);
+  white-space: nowrap;
+}
+
+.ledger .r-kanji {
+  font-family: var(--f-mincho);
+  color: var(--ai);
+  white-space: nowrap;
+}
+
+.ledger .r-n {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--shu);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ledger .r-n-done {
+  color: var(--matsu);
+}
+
+.empty {
+  font-size: 13px;
+  color: var(--ink-faint);
+  padding: 6px 0;
+}
+
+button.link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  color: var(--ai);
+  letter-spacing: 0.04em;
+}
+
+button.link:hover {
+  text-decoration: underline;
+}
+
+/* ── フッター ─────────────────────────────────── */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--rule);
+  padding-top: 14px;
+  font-size: 11.5px;
+  color: var(--ink-faint);
+}
+
+.footer .sync {
+  letter-spacing: 0.06em;
+}
+
+.footer .tools {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.footer button {
+  padding: 7px 12px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

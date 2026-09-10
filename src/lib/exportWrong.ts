@@ -1,12 +1,19 @@
-import type { Progress, Word } from "../types";
+import type { Archive, Card } from "../types";
+import { BOX_LABEL, daysUntilDue } from "./archive";
 
-/** 错题帐导出成 Markdown 表格，方便贴回 Notion 或笔记里。 */
-export function wrongListToMarkdown(rows: Word[], progress: Progress): string {
-  const header = ["| 仮名 | 漢字 | 釈義 | 誤答 | 例文 |", "| --- | --- | --- | ---: | --- |"];
-  const body = rows.map((w) => {
-    const kanji = w.kanji === w.kana ? "—" : w.kanji;
-    const times = progress.wrong[w.id] ?? 0;
-    return `| ${w.kana} | ${kanji} | ${w.gloss} | ${times} | ${w.example} |`;
+/** 単語台帳导出成 Markdown 表格，方便贴回 Notion 或笔记里。 */
+export function ledgerToMarkdown(rows: Card[], archive: Archive): string {
+  const header = [
+    "| 仮名 | 漢字 | 釈義 | 熟練度 | 誤答 | 次回 | 例文 |",
+    "| --- | --- | --- | --- | ---: | ---: | --- |",
+  ];
+  const body = rows.map((c) => {
+    const stat = archive.stats[c.key];
+    const kanji = c.kanji === c.kana ? "—" : c.kanji;
+    if (!stat) return `| ${c.kana} | ${kanji} | ${c.gloss} | — | 0 | — | ${c.example} |`;
+    const days = daysUntilDue(stat);
+    const due = days <= 0 ? "今日" : `${days}日後`;
+    return `| ${c.kana} | ${kanji} | ${c.gloss} | ${stat.box} ${BOX_LABEL[stat.box]} | ${stat.wrong} | ${due} | ${c.example} |`;
   });
   return [...header, ...body].join("\n");
 }

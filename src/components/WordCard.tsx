@@ -1,26 +1,41 @@
-import type { Word } from "../types";
+import type { Card, Origin, WordStat } from "../types";
+import { BOX_LABEL } from "../lib/archive";
 
 type Props = {
-  word: Word;
+  card: Card;
+  origin: Origin | undefined;
+  stat: WordStat | undefined;
   revealed: boolean;
   onReveal: () => void;
   onJudge: (ok: boolean) => void;
 };
 
-export function WordCard({ word, revealed, onReveal, onJudge }: Props) {
+const ORIGIN_LABEL: Record<Origin, string> = {
+  new: "新出",
+  review: "要復習",
+  check: "定着確認",
+};
+
+export function WordCard({ card, origin, stat, revealed, onReveal, onJudge }: Props) {
   // 片假名外来语的「汉字」就是它本身，重复展示没有意义
-  const showKanji = word.kanji !== word.kana;
+  const showKanji = card.kanji !== card.kana;
 
   return (
     <div className="card">
+      <div className="card-tags">
+        <span className="tag">{card.deckLabel}</span>
+        {origin && <span className={`tag tag-${origin}`}>{ORIGIN_LABEL[origin]}</span>}
+        {stat && <span className="tag tag-box">{BOX_LABEL[stat.box]}</span>}
+      </div>
+
       <div className="kana-note">この仮名の漢字と意味は？</div>
-      <p className="kana">{word.kana}</p>
+      <p className="kana">{card.kana}</p>
 
       {revealed && (
         <div className="answer">
-          {showKanji && <p className="kanji">{word.kanji}</p>}
-          <div className="gloss">{word.gloss}</div>
-          {word.example && <div className="example">{word.example}</div>}
+          {showKanji && <p className="kanji">{card.kanji}</p>}
+          <div className="gloss">{card.gloss}</div>
+          {card.example && <div className="example">{card.example}</div>}
         </div>
       )}
 

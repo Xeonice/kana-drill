@@ -1,4 +1,4 @@
-import type { Deck, Word } from "../types";
+import type { Deck, Word } from "../../types";
 
 /** 源数据：假名 / 汉字 / 释义 / 例句 */
 const rows: [string, string, string, string][] = [
@@ -54,7 +54,6 @@ const words: Word[] = rows.map(([kana, kanji, gloss, example], id) => ({
 
 export const day3: Deck = {
   id: "day3",
-  title: "仮名から引く",
-  subtitle: `Day 3 · 単語 ${words.length}`,
+  label: "Day 3",
   words,
 };

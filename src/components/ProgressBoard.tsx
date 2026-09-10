@@ -1,29 +1,29 @@
+import type { Card, Session } from "../types";
 import type { Counts } from "../hooks/useDrill";
-import type { Progress, Word } from "../types";
 
 type Props = {
-  words: Word[];
-  progress: Progress;
-  currentId: number | null;
+  cards: Card[];
+  session: Session;
+  currentKey: string | null;
   counts: Counts;
 };
 
-export function ProgressBoard({ words, progress, currentId, counts }: Props) {
+export function ProgressBoard({ cards, session, currentKey, counts }: Props) {
   return (
     <section className="board">
-      <div className="grid">
-        {words.map((w) => {
+      <div className="grid" style={{ "--cols": Math.min(20, Math.max(10, cards.length)) } as React.CSSProperties}>
+        {cards.map((c) => {
           const classes = ["cell"];
-          if (progress.mastered[w.id]) classes.push("ok");
-          else if ((progress.wrong[w.id] ?? 0) > 0) classes.push("miss");
-          if (w.id === currentId) classes.push("now");
-          return <div key={w.id} className={classes.join(" ")} title={w.kana} />;
+          if (session.mastered[c.key]) classes.push("ok");
+          else if ((session.missed[c.key] ?? 0) > 0) classes.push("miss");
+          if (c.key === currentKey) classes.push("now");
+          return <div key={c.key} className={classes.join(" ")} title={`${c.deckLabel} · ${c.kana}`} />;
         })}
       </div>
       <div className="legend">
         <span>
           <span className="dot dot-ok" />
-          已掌握 <b>{counts.ok}</b>
+          已答对 <b>{counts.ok}</b>
         </span>
         <span>
           <span className="dot dot-miss" />

@@ -1,33 +1,20 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { day3 } from "./data/day3";
+import { ALL_CARDS, DECKS } from "./data";
 import { useDrill } from "./hooks/useDrill";
 import { useTheme } from "./hooks/useTheme";
-import { copyText, wrongListToMarkdown } from "./lib/exportWrong";
+import { copyText, ledgerToMarkdown } from "./lib/exportWrong";
 import { DoneCard } from "./components/DoneCard";
 import { Ledger } from "./components/Ledger";
 import { Masthead } from "./components/Masthead";
 import { ProgressBoard } from "./components/ProgressBoard";
+import { StartPanel } from "./components/StartPanel";
 import { Toolbar } from "./components/Toolbar";
 import { WordCard } from "./components/WordCard";
 
-const deck = day3;
-const IDLE_STATUS = "進捗はこの端末に保存されます";
+const IDLE_STATUS = "熟練度はこの端末に保存されます";
 
 export default function App() {
-  const {
-    progress,
-    current,
-    revealed,
-    finished,
-    counts,
-    wrongList,
-    judge,
-    reveal,
-    shuffle,
-    reset,
-    retryWrong,
-  } = useDrill(deck);
-
+  const drill = useDrill();
   const { theme, cycle } = useTheme();
   const [status, setStatus] = useState(IDLE_STATUS);
   const statusTimer = useRef<number | undefined>(undefined);
@@ -40,19 +27,21 @@ export default function App() {
 
   useEffect(() => () => window.clearTimeout(statusTimer.current), []);
 
-  // 空格翻面，左右方向键判定
+  const { phase, revealed, reveal, judge, begin } = drill;
+
+  // 空格翻面 / 开始，左右方向键判定
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       const target = e.target as HTMLElement | null;
       if (target && /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)) return;
-      if (finished) return;
 
       if (e.code === "Space") {
         e.preventDefault();
-        if (!revealed) reveal();
+        if (phase === "start") begin();
+        else if (phase === "drill" && !revealed) reveal();
         return;
       }
-      if (!revealed) return;
+      if (phase !== "drill" || !revealed) return;
       if (e.key === "ArrowRight") {
         e.preventDefault();
         judge(true);
@@ -63,60 +52,87 @@ export default function App() {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [finished, revealed, reveal, judge]);
+  }, [phase, revealed, reveal, judge, begin]);
 
   const handleExport = useCallback(async () => {
-    const ok = await copyText(wrongListToMarkdown(wrongList, progress));
-    flash(ok ? "錯題帳已复制为 Markdown" : "复制失败，请手动选中表格");
-  }, [wrongList, progress, flash]);
-
-  const handleReset = useCallback(() => {
-    reset();
-    flash("已清空进度，从头再来");
-  }, [reset, flash]);
+    const seen = ALL_CARDS.filter((c) => drill.archive.stats[c.key]);
+    const ok = await copyText(ledgerToMarkdown(seen, drill.archive));
+    flash(ok ? `単語台帳已复制（${seen.length} 语）` : "复制失败，请手动选中表格");
+  }, [drill.archive, flash]);
 
   const handleShuffle = useCallback(() => {
-    shuffle();
+    drill.shuffleRest();
     flash("剩下的词已打乱");
-  }, [shuffle, flash]);
+  }, [drill, flash]);
+
+  const handleResetArchive = useCallback(() => {
+    drill.resetArchive();
+    flash("已清空全部熟练度");
+  }, [drill, flash]);
 
   return (
     <div className="wrap">
       <Masthead
-        title={deck.title}
-        subtitle={deck.subtitle}
-        round={progress.round}
-        remaining={counts.todo}
-        finished={finished}
+        deckCount={DECKS.length}
+        wordCount={ALL_CARDS.length}
+        phase={phase}
+        round={drill.session?.round ?? 1}
+        remaining={drill.counts.todo}
       />
 
-      <ProgressBoard
-        words={deck.words}
-        progress={progress}
-        currentId={current ? current.id : null}
-        counts={counts}
-      />
+      {drill.session && phase !== "start" && (
+        <ProgressBoard
+          cards={drill.cards}
+          session={drill.session}
+          currentKey={drill.current?.key ?? null}
+          counts={drill.counts}
+        />
+      )}
 
       <main>
-        {current ? (
-          <WordCard word={current} revealed={revealed} onReveal={reveal} onJudge={judge} />
-        ) : (
+        {phase === "start" && (
+          <StartPanel
+            plan={drill.plan}
+            archive={drill.archive}
+            deckIds={drill.deckIds}
+            size={drill.size}
+            onToggleDeck={drill.toggleDeck}
+            onSelectAll={drill.selectAllDecks}
+            onSetSize={drill.setSize}
+            onBegin={drill.begin}
+          />
+        )}
+
+        {phase === "drill" && drill.current && drill.session && (
+          <WordCard
+            card={drill.current}
+            origin={drill.session.origins[drill.current.key]}
+            stat={drill.archive.stats[drill.current.key]}
+            revealed={drill.revealed}
+            onReveal={drill.reveal}
+            onJudge={drill.judge}
+          />
+        )}
+
+        {phase === "done" && drill.session && (
           <DoneCard
-            total={deck.words.length}
-            rounds={progress.round}
-            missedCount={wrongList.length}
-            onRetryWrong={retryWrong}
-            onResetAll={handleReset}
+            cards={drill.cards}
+            session={drill.session}
+            archive={drill.archive}
+            missedCards={drill.missedCards}
+            onFinish={drill.endSession}
           />
         )}
       </main>
 
-      <Ledger rows={wrongList} progress={progress} onExport={handleExport} />
+      <Ledger archive={drill.archive} onExport={handleExport} />
 
       <Toolbar
         status={status}
+        phase={phase}
         onShuffle={handleShuffle}
-        onReset={handleReset}
+        onQuit={drill.endSession}
+        onResetArchive={handleResetArchive}
         theme={theme}
         onCycleTheme={cycle}
       />

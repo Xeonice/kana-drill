@@ -139,13 +139,13 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
+  grid-template-columns: repeat(var(--cols, 20), minmax(0, 1fr));
   gap: 3px;
 }
 
 @media (max-width: 460px) {
   .grid {
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(min(var(--cols, 20), 10), minmax(0, 1fr));
   }
 }
 
@@ -521,5 +521,313 @@ button.link:hover {
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* ── 開始パネル ───────────────────────────────── */
+.start {
+  gap: 18px;
+}
+
+.start-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.start-total {
+  font-family: var(--f-mincho);
+  font-size: clamp(44px, 12vw, 64px);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.start-unit {
+  font-size: 0.4em;
+  font-weight: 500;
+  color: var(--ink-faint);
+  margin-left: 0.2em;
+  letter-spacing: 0.1em;
+}
+
+.plan {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan li {
+  display: grid;
+  grid-template-columns: 5.5em 1fr auto 2.5em;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.plan li:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.plan-label {
+  font-family: var(--f-mincho);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.plan-hint {
+  font-size: 11.5px;
+  color: var(--ink-faint);
+}
+
+.plan-decks {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.plan-n {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--ai);
+}
+
+.plan-empty {
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--ink-soft);
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.picker-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.picker-label {
+  font-family: var(--f-mincho);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: var(--ink-faint);
+  width: 2.5em;
+  flex-shrink: 0;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+button.chip {
+  padding: 6px 11px;
+  font-size: 12.5px;
+  border-radius: 2px;
+  color: var(--ink-soft);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+button.chip.on {
+  border-color: var(--ai);
+  color: var(--ai);
+  background: var(--card);
+}
+
+button.chip.on .chip-n {
+  color: var(--ai);
+  opacity: 0.7;
+}
+
+.chip-n {
+  font-size: 10.5px;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+button.chip-all {
+  border-style: dashed;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ── カードのタグ ─────────────────────────────── */
+.card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 2px 7px;
+}
+
+.tag-new {
+  color: var(--ai);
+  border-color: var(--ai);
+}
+
+.tag-review {
+  color: var(--shu);
+  border-color: var(--shu);
+}
+
+.tag-check {
+  color: var(--matsu);
+  border-color: var(--matsu);
+}
+
+/* ── 完走の振り返り ───────────────────────────── */
+.recap {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid var(--rule);
+}
+
+.recap li {
+  display: grid;
+  grid-template-columns: minmax(4em, auto) minmax(3em, auto) 1fr 2em;
+  gap: 10px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+}
+
+.recap-kana {
+  font-family: var(--f-mincho);
+  white-space: nowrap;
+}
+
+.recap-kanji {
+  font-family: var(--f-mincho);
+  color: var(--ai);
+  white-space: nowrap;
+}
+
+.recap-gloss {
+  color: var(--ink-soft);
+}
+
+.recap-n {
+  text-align: right;
+  color: var(--shu);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.recap-more {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 11.5px;
+  border-bottom: none;
+}
+
+.done-next {
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+/* ── 熟練度メーター ───────────────────────────── */
+.meter {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.meter i {
+  width: 5px;
+  height: 12px;
+  border-radius: 1px;
+  background: var(--card-2);
+}
+
+.meter i.on {
+  background: var(--shu);
+}
+
+.meter-3 i.on {
+  background: var(--ai);
+}
+
+.meter-4 i.on,
+.meter-5 i.on {
+  background: var(--matsu);
+}
+
+.meter-label {
+  font-size: 10.5px;
+  color: var(--ink-faint);
+  margin-left: 5px;
+  letter-spacing: 0.06em;
+}
+
+.ledger-tools {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button.link.on {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.r-due {
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+button.danger {
+  border-color: var(--shu);
+  color: var(--shu);
+}
+
+.picker-hint {
+  margin: 0;
+  padding-left: calc(2.5em + 12px);
+  font-size: 11.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 460px) {
+  .picker-hint {
+    padding-left: 0;
   }
 }

@@ -32,10 +32,28 @@
 
 - **喂给合成器的是汉字表记，不是假名。** 日语 TTS 靠汉字查词典才拿得到正确的音调（アクセント）；
   给它一串纯平假名，它既分不了词也查不到 accent，只能平读或猜错 —— 「こうじょう」它分不清是「向上」还是「工場」。
-- **自动跳过新奇音色。** macOS/iOS 自带 Grandma、Rocko 这类每种语言都有一份的玩具音色，音调夸张，
-  拿来练听力会误导。优先选 Kyoko / Otoya / Hattori 这类标准播音音色。
+- **按音质排序并过滤。** 分级和黑名单取自 [readium/speech](https://github.com/readium/speech)
+  （Readium 为 Thorium / Readium Web 维护的跨平台语音评测表），内联在 `src/lib/voiceQuality.ts`，
+  不在运行时抓取 —— 这份表变动极慢，而朗读必须离线可用。
 
-听力模式下可以在「声」那一栏自己换音色并试听，选择记在本机。
+日语音色的实际档位：
+
+| 档位 | 音色 | 哪里有 |
+| --- | --- | --- |
+| 最高音質 | Microsoft Nanami / Keita Online (Natural) | Edge |
+| 高音質 | **Hattori**（Siri premium，需下载） | macOS / iOS |
+| 高音質 | Google 日本語 | Chrome 桌面版预装 |
+| 標準 | Microsoft Ayumi / Haruka / Ichiro | Windows |
+| 簡易 | **Kyoko** / Otoya / O-Ren | macOS / iOS 预装 |
+
+macOS 预装的 Kyoko 只是**簡易**档 —— 音调偏平。Apple 设备上想要明显更好的音质，
+在「系统设置 → 辅助功能 → 朗读内容 → 系统语音 → 管理语音」里下载日语的
+**Siri 声音**（Hattori）或任何标着 Premium / 增强的日语语音，免费、离线可用、100–500 MB。
+装完刷新页面就能在「声」那一栏选到。
+
+Grandma、Rocko、Eddy 这类每种语言都配一份的玩具音色（Readium 归类为 novelty 与
+veryLowQuality）会被直接滤掉，不出现在选择器里。听力模式下可以自己换音色并试听，
+当前音色是簡易档时界面会提示怎么升级。
 
 ## 熟练度怎么算
 

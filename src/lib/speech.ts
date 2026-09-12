@@ -3,6 +3,8 @@
  * 代价是音色由系统决定，且日语语音要用户装了才有 —— 没有就把听力模式关掉。
  */
 
+import { byQuality, excluded, qualityOf, type Quality } from "./voiceQuality";
+
 let cached: SpeechSynthesisVoice | null | undefined;
 
 function synth(): SpeechSynthesis | null {
@@ -11,25 +13,17 @@ function synth(): SpeechSynthesis | null {
     : null;
 }
 
-/** 各平台的标准日语播音音色，优先用这些。 */
-const PREFERRED = ["kyoko", "otoya", "hattori", "o-ren", "google 日本語", "japanese"];
-
-/**
- * macOS/iOS 自带一批「新奇音色」（Grandma、Rocko、Bubbles…），
- * 每种语言都有一份，音调夸张，拿来练听力会误导。排掉。
- */
-const NOVELTY = [
-  "eddy", "flo", "grandma", "grandpa", "reed", "rocko", "sandy", "shelley",
-  "bubbles", "bells", "boing", "jester", "organ", "superstar", "trinoids",
-  "whisper", "wobble", "zarvox", "albert", "bad news", "good news", "cellos",
-];
-
-function isNovelty(name: string): boolean {
-  const n = name.toLowerCase();
-  return NOVELTY.some((bad) => n.includes(bad));
+/** 系统里所有可用的日语音色，去掉玩具与极低质量的，好的排前面。 */
+export function japaneseVoices(): SpeechSynthesisVoice[] {
+  const s = synth();
+  if (!s) return [];
+  const ja = s.getVoices().filter((v) => v.lang.toLowerCase().startsWith("ja"));
+  const usable = ja.filter((v) => !excluded(v.name));
+  // 全被过滤光了就退回原始列表，总比没得读强
+  return (usable.length > 0 ? usable : ja).sort(byQuality);
 }
 
-/** 挑一个日语语音。voices 是异步填充的，拿不到就下次再问。 */
+/** 挑音质最好的那个。voices 是异步填充的，拿不到就下次再问。 */
 export function japaneseVoice(): SpeechSynthesisVoice | null {
   const s = synth();
   if (!s) return null;
@@ -38,30 +32,19 @@ export function japaneseVoice(): SpeechSynthesisVoice | null {
   const voices = s.getVoices();
   if (voices.length === 0) return null; // 还没加载好，不要记住这个结果
 
-  const ja = voices.filter((v) => v.lang.toLowerCase().startsWith("ja"));
-  const named = (needle: string) =>
-    ja.find((v) => v.name.toLowerCase().includes(needle));
-
-  cached =
-    PREFERRED.map(named).find(Boolean) ??
-    // 其次是任何非新奇的本地音色，联网语音在弱网下会卡住
-    ja.find((v) => v.localService && !isNovelty(v.name)) ??
-    ja.find((v) => !isNovelty(v.name)) ??
-    ja[0] ??
-    null;
+  cached = japaneseVoices()[0] ?? null;
   return cached;
 }
 
-/** 当前用的是哪个音色，显示在界面上好让人知道听的是谁。 */
+/** 当前用的是哪个音色。 */
 export function voiceName(): string | null {
   return japaneseVoice()?.name ?? null;
 }
 
-/** 系统里所有可用的日语音色，供用户自己换。 */
-export function japaneseVoices(): SpeechSynthesisVoice[] {
-  const s = synth();
-  if (!s) return [];
-  return s.getVoices().filter((v) => v.lang.toLowerCase().startsWith("ja"));
+/** 当前音色的音质档位，用于提示还能不能更好。 */
+export function currentQuality(): Quality | null {
+  const v = japaneseVoice();
+  return v ? qualityOf(v.name) : null;
 }
 
 /** 指定音色，null 表示恢复自动挑选。 */

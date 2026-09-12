@@ -971,3 +971,15 @@ button.speak svg {
   outline: 2px solid var(--ai);
   outline-offset: 2px;
 }
+
+.picker-hint.upgrade {
+  border-left: 2px solid var(--ai);
+  padding-left: 10px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+
+.picker-hint.upgrade strong {
+  color: var(--ink);
+  font-weight: 500;
+}

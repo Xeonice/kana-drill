@@ -111,6 +111,7 @@ export default function App() {
             onBegin={drill.begin}
             voices={voice.voices}
             voice={voice.current}
+            voiceQuality={voice.quality}
             onChooseVoice={voice.choose}
             onPreviewVoice={voice.preview}
           />

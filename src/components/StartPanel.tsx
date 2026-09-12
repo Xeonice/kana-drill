@@ -3,6 +3,8 @@ import type { Plan, Size } from "../lib/session";
 import { DECKS } from "../data";
 import { MODE_LABEL, MODES } from "../lib/archive";
 import { SIZE_HINT, SIZE_LABEL } from "../lib/session";
+import { QUALITY_LABEL, type Quality } from "../lib/voiceQuality";
+import type { VoiceOption } from "../hooks/useVoice";
 
 type Props = {
   plan: Plan;
@@ -16,8 +18,9 @@ type Props = {
   onSetSize: (size: Size) => void;
   onSetMode: (mode: Mode) => void;
   onBegin: () => void;
-  voices: string[];
+  voices: VoiceOption[];
   voice: string | null;
+  voiceQuality: Quality | null;
   onChooseVoice: (name: string) => void;
   onPreviewVoice: () => void;
 };
@@ -44,6 +47,7 @@ export function StartPanel({
   onBegin,
   voices,
   voice,
+  voiceQuality,
   onChooseVoice,
   onPreviewVoice,
 }: Props) {
@@ -113,27 +117,38 @@ export function StartPanel({
           {mode === "audio" && !canSpeak && " —— 这台设备没装日语语音，暂时用不了"}
         </p>
 
-        {mode === "audio" && canSpeak && voices.length > 1 && (
-          <div className="picker-row">
-            <span className="picker-label">声</span>
-            <div className="voice-pick">
-              <select
-                id="voice"
-                value={voice ?? ""}
-                onChange={(e) => onChooseVoice(e.target.value)}
-                aria-label="朗读音色"
-              >
-                {voices.map((v) => (
-                  <option key={v} value={v}>
-                    {v}
-                  </option>
-                ))}
-              </select>
-              <button type="button" className="link" onClick={onPreviewVoice}>
-                試聴
-              </button>
+        {mode === "audio" && canSpeak && voices.length > 0 && (
+          <>
+            <div className="picker-row">
+              <span className="picker-label">声</span>
+              <div className="voice-pick">
+                <select
+                  id="voice"
+                  value={voice ?? ""}
+                  onChange={(e) => onChooseVoice(e.target.value)}
+                  aria-label="朗读音色"
+                >
+                  {voices.map((v) => (
+                    <option key={v.name} value={v.name}>
+                      {v.name} · {QUALITY_LABEL[v.quality]}
+                    </option>
+                  ))}
+                </select>
+                <button type="button" className="link" onClick={onPreviewVoice}>
+                  試聴
+                </button>
+              </div>
             </div>
-          </div>
+
+            {voiceQuality === "low" && (
+              <p className="picker-hint upgrade">
+                现在用的是系统预装的压缩版语音，音调偏平。
+                <strong>系统设置 → 辅助功能 → 朗读内容 → 系统语音 → 管理语音</strong>
+                里下载日语的 <strong>Siri 声音</strong>（Hattori）或任何标着
+                Premium / 增强 的日语语音，装完刷新这页就能在上面选到。
+              </p>
+            )}
+          </>
         )}
 
         <div className="picker-row">

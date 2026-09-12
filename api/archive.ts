@@ -7,12 +7,53 @@ import { Redis } from "@upstash/redis";
  */
 const REDIS_KEY = "kana-drill:archive";
 
+type WordStat = {
+  box: number;
+  wrong: number;
+  right: number;
+  lastSeen: string;
+  dueOn: string;
+  updatedAt?: string;
+};
+
+type Archive = {
+  version: number;
+  stats: Record<string, WordStat>;
+  updatedAt: string;
+};
+
 function client(): Redis | null {
   // 集成注入的变量名两种都见过，都认
   const url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL;
   const token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN;
   if (!url || !token) return null;
   return new Redis({ url, token });
+}
+
+function isArchive(value: unknown): value is Archive {
+  if (typeof value !== "object" || value === null) return false;
+  const a = value as Partial<Archive>;
+  return typeof a.stats === "object" && a.stats !== null;
+}
+
+/**
+ * 逐条合并，同一条成绩取判定时刻更新的那个。
+ * 整份覆盖的话，手机先推、电脑后推就会把手机那半天的进度抹掉。
+ */
+function merge(base: Archive, incoming: Archive): Archive {
+  const stats: Record<string, WordStat> = { ...base.stats };
+  for (const [key, next] of Object.entries(incoming.stats)) {
+    const current = stats[key];
+    if (!current || (next.updatedAt ?? "") > (current.updatedAt ?? "")) {
+      stats[key] = next;
+    }
+  }
+  return {
+    version: incoming.version,
+    stats,
+    updatedAt:
+      base.updatedAt > incoming.updatedAt ? base.updatedAt : incoming.updatedAt,
+  };
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -30,12 +71,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     if (req.method === "PUT") {
       const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-      const archive = body?.archive;
-      if (!archive || typeof archive !== "object" || typeof archive.stats !== "object") {
+      const incoming = body?.archive;
+      if (!isArchive(incoming)) {
         return res.status(400).json({ error: "invalid_archive" });
       }
-      await redis.set(REDIS_KEY, archive);
-      return res.status(200).json({ ok: true });
+
+      const existing = await redis.get(REDIS_KEY);
+      const merged = isArchive(existing) ? merge(existing, incoming) : incoming;
+      await redis.set(REDIS_KEY, merged);
+
+      // 把合并结果给回去，客户端据此跟上别的设备写入的记录
+      return res.status(200).json({ ok: true, archive: merged });
     }
 
     res.setHeader("Allow", "GET, PUT");

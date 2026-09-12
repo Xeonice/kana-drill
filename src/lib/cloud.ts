@@ -19,16 +19,22 @@ export async function fetchArchive(): Promise<Archive | null> {
   }
 }
 
-/** 推送档案。返回是否真的存上了，让界面能如实显示。 */
-export async function pushArchive(archive: Archive): Promise<boolean> {
+/**
+ * 推送档案。服务端会和云端现有记录逐条合并再落库，
+ * 并把合并结果回给我们 —— 据此跟上别的设备刚写入的记录。
+ * 返回 null 表示没存上，界面会如实显示。
+ */
+export async function pushArchive(archive: Archive): Promise<Archive | null> {
   try {
     const res = await fetch("/api/archive", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ archive }),
     });
-    return res.ok;
+    if (!res.ok) return null;
+    const body = (await res.json()) as { archive?: unknown };
+    return isArchive(body.archive) ? body.archive : archive;
   } catch {
-    return false;
+    return null;
   }
 }

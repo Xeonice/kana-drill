@@ -80,7 +80,15 @@ export function useDrill() {
     window.clearTimeout(pushTimer.current);
     setSync("syncing");
     pushTimer.current = window.setTimeout(() => {
-      pushArchive(latest.current).then((ok) => setSync(ok ? "synced" : "failed"));
+      pushArchive(latest.current).then((merged) => {
+        if (!merged) {
+          setSync("failed");
+          return;
+        }
+        // 服务端合并进了别的设备的记录，本地跟上
+        setArchive((current) => merge(current, merged));
+        setSync("synced");
+      });
     }, PUSH_DELAY);
   }, []);
 

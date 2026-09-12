@@ -1,5 +1,7 @@
 # 仮名から引く · Kana Drill
 
+**▶ https://kana-drill-taupe.vercel.app**
+
 只看假名回想汉字与释义的日语单词卡。按熟练度分箱（Leitner）安排复习，词单一天天加进来，每次练习的量却不会跟着无限膨胀。
 
 ## 怎么用
@@ -95,15 +97,17 @@ npm run build      # 类型检查 + 产出 dist/
 npm run preview    # 预览构建产物
 ```
 
-## 部署到 Vercel
+## 部署
 
-纯静态前端，零配置：
+已经连上 Vercel，**推到 `main` 就会自动部署**到上面那个地址。
+
+要手动发一次（比如没推 git 就想上线）：
 
 ```bash
-npx vercel --prod
+vercel --prod --scope xeonices-projects
 ```
 
-或在 [vercel.com/new](https://vercel.com/new) 导入这个仓库 —— Vercel 会自动识别 Vite（Build `npm run build`，Output `dist`）。
+`--scope` 不能省 —— 非交互模式下不带它会报 `missing_scope`。
 
 ## 技术栈
 

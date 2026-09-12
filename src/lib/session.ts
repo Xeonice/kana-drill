@@ -42,6 +42,28 @@ function shuffle<T>(items: T[]): T[] {
   return out;
 }
 
+/** 熟练度排序键：还没学过算 0（最该练），学过的按等级。 */
+function needIndex(card: Card, archive: Archive): number {
+  return archive.stats[card.key]?.box ?? 0;
+}
+
+/**
+ * 同一个词可能被收进多份词单（比如 Day 3 和 Day 4 都有「人手」）。
+ * 一次练习只考它一遍，否则第二次刚看过必然答对，白送一级。
+ * 留下最需要练的那张：没学过的优先，其次等级低的。
+ */
+function dedupe(pool: Card[], archive: Archive): Card[] {
+  const best = new Map<string, Card>();
+  pool.forEach((card) => {
+    const id = `${card.kana}|${card.kanji}`;
+    const kept = best.get(id);
+    if (!kept || needIndex(card, archive) < needIndex(kept, archive)) {
+      best.set(id, card);
+    }
+  });
+  return pool.filter((c) => best.get(`${c.kana}|${c.kanji}`) === c);
+}
+
 /**
  * 按熟练度挑出今天该练的词：
  * - 新出：还没见过的
@@ -51,8 +73,9 @@ function shuffle<T>(items: T[]): T[] {
  * 軽め / 標準 只收已经到期的旧词，到期的优先占名额，剩下的才给新词；
  * 「たっぷり」无视到期，把选中范围整个过一遍 —— 想一次回顾全部内容时用它。
  */
-export function buildPlan(pool: Card[], archive: Archive, size: Size): Plan {
+export function buildPlan(rawPool: Card[], archive: Archive, size: Size): Plan {
   const everything = size === "full";
+  const pool = dedupe(rawPool, archive);
   const fresh: Card[] = [];
   const review: Card[] = [];
   const check: Card[] = [];

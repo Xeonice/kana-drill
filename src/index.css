@@ -831,3 +831,143 @@ button.danger {
     padding-left: 0;
   }
 }
+
+/* ── 聴解モード ───────────────────────────────── */
+.listen {
+  display: flex;
+  justify-content: center;
+  padding-block: 10px;
+}
+
+button.speak-big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 26px 34px;
+  border-radius: 3px;
+  border-color: var(--ai);
+  color: var(--ai);
+  font-family: var(--f-mincho);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+}
+
+button.speak-big:hover {
+  background: var(--ai-wash);
+}
+
+button.speak-big svg {
+  width: 40px;
+  height: 40px;
+}
+
+.speak-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button.speak {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: 0.06em;
+}
+
+button.speak:hover {
+  border-color: var(--ai);
+  color: var(--ai);
+}
+
+button.speak svg {
+  width: 15px;
+  height: 15px;
+}
+
+.answer-kana {
+  font-size: clamp(26px, 7vw, 38px);
+  color: var(--ink-soft);
+}
+
+.tag-mode {
+  color: var(--ink-soft);
+  border-color: var(--ink-faint);
+}
+
+/* ── 台帳の熟練度セル ─────────────────────────── */
+.ledger .meter {
+  gap: 1.5px;
+}
+
+.ledger .meter i {
+  width: 4px;
+  height: 11px;
+}
+
+.meter-na {
+  color: var(--ink-faint);
+  font-size: 12px;
+}
+
+/* ── 同期インジケータ ─────────────────────────── */
+.sync {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sync-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ink-faint);
+  flex-shrink: 0;
+}
+
+.sync-synced {
+  background: var(--matsu);
+}
+
+.sync-syncing {
+  background: var(--ai);
+}
+
+.sync-failed {
+  background: var(--shu);
+}
+
+@media (max-width: 460px) {
+  button.chip {
+    font-size: 12px;
+    padding: 6px 9px;
+  }
+}
+
+/* ── 声の選択 ────────────────────────────────── */
+.voice-pick {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.voice-pick select {
+  font-family: var(--f-gothic);
+  font-size: 12.5px;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 6px 8px;
+  max-width: 15em;
+}
+
+.voice-pick select:focus-visible {
+  outline: 2px solid var(--ai);
+  outline-offset: 2px;
+}

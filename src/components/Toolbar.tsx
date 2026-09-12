@@ -1,9 +1,11 @@
 import { useState } from "react";
 import type { Theme } from "../hooks/useTheme";
 import type { Phase } from "../hooks/useDrill";
+import type { SyncState } from "../lib/cloud";
 
 type Props = {
   status: string;
+  sync: SyncState;
   phase: Phase;
   onShuffle: () => void;
   onQuit: () => void;
@@ -18,8 +20,16 @@ const THEME_LABEL: Record<Theme, string> = {
   dark: "深色",
 };
 
+const SYNC_LABEL: Record<SyncState, string> = {
+  syncing: "同期中…",
+  synced: "クラウドに保存済み",
+  failed: "同期失败 · 已存本机",
+  offline: "この端末に保存",
+};
+
 export function Toolbar({
   status,
+  sync,
   phase,
   onShuffle,
   onQuit,
@@ -31,7 +41,10 @@ export function Toolbar({
 
   return (
     <footer className="footer">
-      <span className="sync">{status}</span>
+      <span className="sync">
+        <span className={`sync-dot sync-${sync}`} aria-hidden="true" />
+        {status || SYNC_LABEL[sync]}
+      </span>
       <div className="tools">
         <button type="button" onClick={onCycleTheme}>
           {THEME_LABEL[theme]}

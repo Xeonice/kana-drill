@@ -1,5 +1,5 @@
-import type { Archive, Card, Origin, Session } from "../types";
-import { isDue } from "./archive";
+import type { Archive, Card, Mode, Origin, Session } from "../types";
+import { isDue, statKey } from "./archive";
 
 /** 一次练习的规模。数字是上限，不够就少抽一点。 */
 export type Size = "light" | "normal" | "full";
@@ -43,21 +43,29 @@ function shuffle<T>(items: T[]): T[] {
 }
 
 /** 熟练度排序键：还没学过算 0（最该练），学过的按等级。 */
-function needIndex(card: Card, archive: Archive): number {
-  return archive.stats[card.key]?.box ?? 0;
+function needIndex(card: Card, archive: Archive, mode: Mode): number {
+  return archive.stats[statKey(card.key, mode)]?.box ?? 0;
+}
+
+/**
+ * 「漢字 → 読み」模式下，片假名外来语的正反面是同一串字（サークル → サークル），
+ * 考它没有意义，直接不收进这个模式的词池。
+ */
+export function usableInMode(card: Card, mode: Mode): boolean {
+  return mode !== "kanji" || card.kanji !== card.kana;
 }
 
 /**
  * 同一个词可能被收进多份词单（比如 Day 3 和 Day 4 都有「人手」）。
  * 一次练习只考它一遍，否则第二次刚看过必然答对，白送一级。
- * 留下最需要练的那张：没学过的优先，其次等级低的。
+ * 留下当前模式下最需要练的那张：没学过的优先，其次等级低的。
  */
-function dedupe(pool: Card[], archive: Archive): Card[] {
+function dedupe(pool: Card[], archive: Archive, mode: Mode): Card[] {
   const best = new Map<string, Card>();
   pool.forEach((card) => {
     const id = `${card.kana}|${card.kanji}`;
     const kept = best.get(id);
-    if (!kept || needIndex(card, archive) < needIndex(kept, archive)) {
+    if (!kept || needIndex(card, archive, mode) < needIndex(kept, archive, mode)) {
       best.set(id, card);
     }
   });
@@ -73,15 +81,15 @@ function dedupe(pool: Card[], archive: Archive): Card[] {
  * 軽め / 標準 只收已经到期的旧词，到期的优先占名额，剩下的才给新词；
  * 「たっぷり」无视到期，把选中范围整个过一遍 —— 想一次回顾全部内容时用它。
  */
-export function buildPlan(rawPool: Card[], archive: Archive, size: Size): Plan {
+export function buildPlan(rawPool: Card[], archive: Archive, size: Size, mode: Mode): Plan {
   const everything = size === "full";
-  const pool = dedupe(rawPool, archive);
+  const pool = dedupe(rawPool.filter((c) => usableInMode(c, mode)), archive, mode);
   const fresh: Card[] = [];
   const review: Card[] = [];
   const check: Card[] = [];
 
   pool.forEach((card) => {
-    const stat = archive.stats[card.key];
+    const stat = archive.stats[statKey(card.key, mode)];
     if (!stat) fresh.push(card);
     else if (!everything && !isDue(stat)) return;
     else if (stat.box <= 2) review.push(card);
@@ -124,7 +132,7 @@ export function buildPlan(rawPool: Card[], archive: Archive, size: Size): Plan {
 }
 
 /** 把选好的词铺成一次练习。生的词先出，熟的词垫后。 */
-export function startSession(plan: Plan): Session {
+export function startSession(plan: Plan, mode: Mode): Session {
   const origins: Record<string, Origin> = {};
   plan.new.forEach((c) => (origins[c.key] = "new"));
   plan.review.forEach((c) => (origins[c.key] = "review"));
@@ -133,6 +141,7 @@ export function startSession(plan: Plan): Session {
   const order = shuffle([...plan.review, ...plan.new, ...plan.check]).map((c) => c.key);
 
   return {
+    mode,
     origins,
     order,
     cursor: 0,

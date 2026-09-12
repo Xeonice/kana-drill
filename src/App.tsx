@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ALL_CARDS, DECKS } from "./data";
+import { MODES, statKey } from "./lib/archive";
 import { useDrill } from "./hooks/useDrill";
 import { useTheme } from "./hooks/useTheme";
+import { useVoice } from "./hooks/useVoice";
 import { copyText, ledgerToMarkdown } from "./lib/exportWrong";
 import { DoneCard } from "./components/DoneCard";
 import { Ledger } from "./components/Ledger";
@@ -11,11 +13,13 @@ import { StartPanel } from "./components/StartPanel";
 import { Toolbar } from "./components/Toolbar";
 import { WordCard } from "./components/WordCard";
 
-const IDLE_STATUS = "熟練度はこの端末に保存されます";
+/** 空串表示交回给 Toolbar 显示同步状态 */
+const IDLE_STATUS = "";
 
 export default function App() {
   const drill = useDrill();
   const { theme, cycle } = useTheme();
+  const voice = useVoice(drill.canSpeak);
   const [status, setStatus] = useState(IDLE_STATUS);
   const statusTimer = useRef<number | undefined>(undefined);
 
@@ -55,7 +59,9 @@ export default function App() {
   }, [phase, revealed, reveal, judge, begin]);
 
   const handleExport = useCallback(async () => {
-    const seen = ALL_CARDS.filter((c) => drill.archive.stats[c.key]);
+    const seen = ALL_CARDS.filter((c) =>
+      MODES.some((m) => drill.archive.stats[statKey(c.key, m)]),
+    );
     const ok = await copyText(ledgerToMarkdown(seen, drill.archive));
     flash(ok ? `単語台帳已复制（${seen.length} 语）` : "复制失败，请手动选中表格");
   }, [drill.archive, flash]);
@@ -96,19 +102,28 @@ export default function App() {
             archive={drill.archive}
             deckIds={drill.deckIds}
             size={drill.size}
+            mode={drill.mode}
+            canSpeak={drill.canSpeak}
             onToggleDeck={drill.toggleDeck}
             onSelectAll={drill.selectAllDecks}
             onSetSize={drill.setSize}
+            onSetMode={drill.setMode}
             onBegin={drill.begin}
+            voices={voice.voices}
+            voice={voice.current}
+            onChooseVoice={voice.choose}
+            onPreviewVoice={voice.preview}
           />
         )}
 
         {phase === "drill" && drill.current && drill.session && (
           <WordCard
             card={drill.current}
+            mode={drill.session.mode}
             origin={drill.session.origins[drill.current.key]}
-            stat={drill.archive.stats[drill.current.key]}
+            stat={drill.archive.stats[statKey(drill.current.key, drill.session.mode)]}
             revealed={drill.revealed}
+            canSpeak={drill.canSpeak}
             onReveal={drill.reveal}
             onJudge={drill.judge}
           />
@@ -129,6 +144,7 @@ export default function App() {
 
       <Toolbar
         status={status}
+        sync={drill.sync}
         phase={phase}
         onShuffle={handleShuffle}
         onQuit={drill.endSession}

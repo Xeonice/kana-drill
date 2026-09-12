@@ -30,7 +30,16 @@ export type Card = Word & {
 /** 熟练度等级：1 最生，5 已定着。 */
 export type Box = 1 | 2 | 3 | 4 | 5;
 
-/** 一个词的长期成绩，跨天累积，不随单次练习清空。 */
+/**
+ * 练习模式。同一个词在三种模式下各记一套熟练度 ——
+ * 看着假名能写出汉字，不代表听到声音能反应过来。
+ * - kana  仮名 → 漢字・釈義（写作场景）
+ * - kanji 漢字 → 読み・釈義（阅读场景）
+ * - audio 聞く → 仮名・漢字・釈義（听力场景）
+ */
+export type Mode = "kana" | "kanji" | "audio";
+
+/** 一个词在一种模式下的长期成绩，跨天累积，不随单次练习清空。 */
 export type WordStat = {
   box: Box;
   /** 累计答错次数 */
@@ -41,11 +50,16 @@ export type WordStat = {
   lastSeen: string;
   /** 下次该复习的日期（YYYY-MM-DD） */
   dueOn: string;
+  /** 上次判定的时刻（ISO），多设备合并时比这个 */
+  updatedAt: string;
 };
 
-/** 长期档案：所有见过的词的成绩单。 */
+/**
+ * 长期档案：所有练过的「词 × 模式」的成绩单。
+ * 键是 `${deckId}:${wordId}@${mode}`，见 statKey()。
+ */
 export type Archive = {
-  version: 2;
+  version: 3;
   stats: Record<string, WordStat>;
   updatedAt: string;
 };
@@ -55,6 +69,8 @@ export type Origin = "new" | "review" | "check";
 
 /** 一次练习：从档案里抽出来的一批词 + 当前进度。练完即弃。 */
 export type Session = {
+  /** 这次练的是哪种模式 */
+  mode: Mode;
   /** 抽中的词，按 key 记录来源 */
   origins: Record<string, Origin>;
   /** 本巡的出题顺序（存 card.key） */

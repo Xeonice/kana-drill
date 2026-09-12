@@ -1,6 +1,7 @@
-import type { Archive } from "../types";
+import type { Archive, Mode } from "../types";
 import type { Plan, Size } from "../lib/session";
 import { DECKS } from "../data";
+import { MODE_LABEL, MODES } from "../lib/archive";
 import { SIZE_HINT, SIZE_LABEL } from "../lib/session";
 
 type Props = {
@@ -8,10 +9,23 @@ type Props = {
   archive: Archive;
   deckIds: string[];
   size: Size;
+  mode: Mode;
+  canSpeak: boolean;
   onToggleDeck: (id: string) => void;
   onSelectAll: () => void;
   onSetSize: (size: Size) => void;
+  onSetMode: (mode: Mode) => void;
   onBegin: () => void;
+  voices: string[];
+  voice: string | null;
+  onChooseVoice: (name: string) => void;
+  onPreviewVoice: () => void;
+};
+
+const MODE_HINT: Record<Mode, string> = {
+  kana: "看假名，回想汉字和意思 —— 写作场景",
+  kanji: "看汉字，回想读音和意思 —— 阅读场景。片假名外来语不计入",
+  audio: "只听声音，回想写法和意思 —— 听力场景",
 };
 
 const SIZES: Size[] = ["light", "normal", "full"];
@@ -21,10 +35,17 @@ export function StartPanel({
   archive,
   deckIds,
   size,
+  mode,
+  canSpeak,
   onToggleDeck,
   onSelectAll,
   onSetSize,
+  onSetMode,
   onBegin,
+  voices,
+  voice,
+  onChooseVoice,
+  onPreviewVoice,
 }: Props) {
   const seen = Object.keys(archive.stats).length;
   const allSelected = deckIds.length === DECKS.length;
@@ -65,6 +86,56 @@ export function StartPanel({
       )}
 
       <div className="picker">
+        <div className="picker-row">
+          <span className="picker-label">形式</span>
+          <div className="chips">
+            {MODES.map((m) => {
+              const blocked = m === "audio" && !canSpeak;
+              return (
+                <button
+                  key={m}
+                  type="button"
+                  className={m === mode ? "chip on" : "chip"}
+                  aria-pressed={m === mode}
+                  disabled={blocked}
+                  title={blocked ? "这台设备没有日语语音，装了之后可用" : undefined}
+                  onClick={() => onSetMode(m)}
+                >
+                  {MODE_LABEL[m]}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <p className="picker-hint">
+          {MODE_HINT[mode]}
+          {mode === "audio" && !canSpeak && " —— 这台设备没装日语语音，暂时用不了"}
+        </p>
+
+        {mode === "audio" && canSpeak && voices.length > 1 && (
+          <div className="picker-row">
+            <span className="picker-label">声</span>
+            <div className="voice-pick">
+              <select
+                id="voice"
+                value={voice ?? ""}
+                onChange={(e) => onChooseVoice(e.target.value)}
+                aria-label="朗读音色"
+              >
+                {voices.map((v) => (
+                  <option key={v} value={v}>
+                    {v}
+                  </option>
+                ))}
+              </select>
+              <button type="button" className="link" onClick={onPreviewVoice}>
+                試聴
+              </button>
+            </div>
+          </div>
+        )}
+
         <div className="picker-row">
           <span className="picker-label">範囲</span>
           <div className="chips">

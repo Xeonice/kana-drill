@@ -1,5 +1,5 @@
 import type { Archive, Card, Session } from "../types";
-import { BOX_LABEL, daysUntilDue } from "../lib/archive";
+import { BOX_LABEL, MODE_LABEL, daysUntilDue, statKey } from "../lib/archive";
 
 type Props = {
   cards: Card[];
@@ -15,7 +15,7 @@ export function DoneCard({ cards, session, archive, missedCards, onFinish }: Pro
 
   // 这次之后，下一批到期是几天以后
   const nextDue = cards
-    .map((c) => archive.stats[c.key])
+    .map((c) => archive.stats[statKey(c.key, session.mode)])
     .filter(Boolean)
     .map((s) => daysUntilDue(s))
     .filter((d) => d > 0)
@@ -26,7 +26,7 @@ export function DoneCard({ cards, session, archive, missedCards, onFinish }: Pro
       <div className="done">
         <div className="seal">全巡了</div>
         <p>
-          {total} 語すべて正解になりました。共 {session.round} 巡。
+          {MODE_LABEL[session.mode]} · {total} 語すべて正解になりました。共 {session.round} 巡。
           <br />
           一次就想起来的 {clean} 个
           {missedCards.length > 0 ? `，想不起来过的 ${missedCards.length} 个已经掉回第 1 级。` : "，全对。"}

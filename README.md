@@ -6,12 +6,36 @@
 
 ## 怎么用
 
-1. 首页显示**本日のおさらい** —— 今天该练多少词、分别来自哪里
-2. 卡片正面只显示假名，先在心里默想汉字和意思
-3. 点「翻面 · 看答案」（或按 `空格`）揭晓汉字、释义、例句
+1. 首页选**形式**（三选一）和范围，显示**本日のおさらい** —— 今天该练多少词
+2. 卡片正面给出题面，先在心里默想答案
+3. 点「翻面 · 看答案」（或按 `空格`）揭晓
 4. 自评 **正确** / **错误**（键盘 `→` / `←`）
 
 一次练习内，判「错误」的词会排进下一巡，直到本次抽中的词全部答对为止。
+
+## 三种形式
+
+| 形式 | 正面 | 背面 | 场景 |
+| --- | --- | --- | --- |
+| 仮名 → 漢字 | 假名 | 汉字 + 释义 | 写作 |
+| 漢字 → 読み | 汉字 | 假名 + 释义 | 阅读 |
+| 聞いて答える | 只有声音 | 假名 + 汉字 + 释义 | 听力 |
+
+**三种形式的熟练度各记一套** —— 看假名能写出汉字，不代表听到声音能反应过来。
+単語台帳里三列并排，弱项一眼看得出。
+
+「漢字 → 読み」不收片假名外来语（サークル、メリット…），正反面是同一串字，考它没意义。
+
+## 朗读
+
+用浏览器自带的 Web Speech API，不联网、不花钱。两个要点：
+
+- **喂给合成器的是汉字表记，不是假名。** 日语 TTS 靠汉字查词典才拿得到正确的音调（アクセント）；
+  给它一串纯平假名，它既分不了词也查不到 accent，只能平读或猜错 —— 「こうじょう」它分不清是「向上」还是「工場」。
+- **自动跳过新奇音色。** macOS/iOS 自带 Grandma、Rocko 这类每种语言都有一份的玩具音色，音调夸张，
+  拿来练听力会误导。优先选 Kyoko / Otoya / Hattori 这类标准播音音色。
+
+听力模式下可以在「声」那一栏自己换音色并试听，选择记在本机。
 
 ## 熟练度怎么算
 
@@ -79,14 +103,32 @@ export const DECKS: Deck[] = [day3, day4];
 
 ## 数据存在哪
 
-全部在浏览器 localStorage，没有账号也没有后端：
+**本机**（localStorage，始终写）：
 
-- `kana-drill:archive:v2` —— 长期档案，每个词的等级 / 累计错答 / 下次到期日
-- `kana-drill:theme` —— 主题偏好
+- `kana-drill:archive:v3` —— 长期档案，键是 `deckId:wordId@mode`
+- `kana-drill:theme` / `kana-drill:voice` —— 主题与音色偏好
 
-单次练习的进度不落盘（关掉就重来），跨设备也不同步。「単語台帳」可以一键复制成 Markdown 表格，贴回 Notion 备份。
+**云端**（Upstash Redis，经 `/api/archive` 读写）：整站开了 Vercel Authentication，
+能走到这个接口的请求都已通过身份校验，所以只存一份档案，不分用户。
 
+同步策略：打开时先用本机档案立刻开张，再拉云端**按条合并** —— 同一条成绩取
+判定时刻更新的那个，所以手机练一半、电脑接着练不会互相覆盖整份。判定后防抖推送。
+云端不可用时（没配数据库、断网）自动退回只用本机，界面上会如实显示状态，不挡着背单词。
+
+单次练习的进度不落盘（关掉就重来）。「単語台帳」可以一键复制成 Markdown 表格，贴回 Notion 备份。
 首页底部的「清空档案」会抹掉全部熟练度，需要二次确认。
+
+### 环境变量
+
+`api/archive.ts` 需要 Upstash Redis 的连接信息，由 Vercel 的 Upstash 集成自动注入：
+
+```
+KV_REST_API_URL      （或 UPSTASH_REDIS_REST_URL）
+KV_REST_API_TOKEN    （或 UPSTASH_REDIS_REST_TOKEN）
+```
+
+没配也能跑，接口返回 503，前端退回本机存储。本地开发用 `vercel dev` 才会跑 `api/`；
+`vite dev` / `vite preview` 下 `/api/archive` 是 404，同样走降级。
 
 ## 本地开发
 
@@ -117,8 +159,11 @@ React 18 + TypeScript + Vite。没有后端、没有账号、没有第三方追�
 src/
   data/decks/day3.ts   词单（一天一个文件）
   data/index.ts        词单注册表 + 摊平成词池
-  lib/archive.ts       Leitner 等级、到期计算、v1 存档迁移
-  lib/session.ts       今日抽词（buildPlan）与出题顺序
+  lib/archive.ts       Leitner 等级、到期计算、跨设备合并、v1/v2 存档迁移
+  lib/session.ts       今日抽词（buildPlan）、模式过滤、跨词单去重
+  lib/speech.ts        朗读与音色挑选
+  lib/cloud.ts         云端档案的读写
   hooks/useDrill.ts    长期档案 + 单次练习两层状态
   components/          StartPanel / WordCard / ProgressBoard / DoneCard / Ledger / Toolbar
+api/archive.ts         读写 Upstash Redis 的 Serverless Function
 ```

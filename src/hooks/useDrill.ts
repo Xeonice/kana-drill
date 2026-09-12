@@ -1,8 +1,18 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
-import type { Archive, Card, Session } from "../types";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { Archive, Card, Mode, Session } from "../types";
 import { CARD_BY_KEY, cardsOfDecks, DECKS } from "../data";
-import { emptyArchive, grade, loadArchive, saveArchive, clearArchive } from "../lib/archive";
+import {
+  clearArchive,
+  emptyArchive,
+  grade,
+  loadArchive,
+  merge,
+  saveArchive,
+  statKey,
+} from "../lib/archive";
 import { buildPlan, startSession, type Plan, type Size } from "../lib/session";
+import { fetchArchive, pushArchive, type SyncState } from "../lib/cloud";
+import { onVoicesReady, speechAvailable } from "../lib/speech";
 
 export type Phase = "start" | "drill" | "done";
 
@@ -15,30 +25,73 @@ export type Counts = {
   miss: number;
 };
 
+const PUSH_DELAY = 800;
+
 export function useDrill() {
   const [archive, setArchive] = useState<Archive>(emptyArchive);
   const [ready, setReady] = useState(false);
+  const [sync, setSync] = useState<SyncState>("offline");
   const [deckIds, setDeckIds] = useState<string[]>(() => DECKS.map((d) => d.id));
   const [size, setSize] = useState<Size>("normal");
+  const [mode, setMode] = useState<Mode>("kana");
   const [session, setSession] = useState<Session | null>(null);
   const [revealed, setRevealed] = useState(false);
+  const [canSpeak, setCanSpeak] = useState(false);
 
-  // 读档要等挂载之后，避免预渲染时碰 localStorage
+  const pushTimer = useRef<number | undefined>(undefined);
+  const latest = useRef<Archive>(archive);
+  latest.current = archive;
+
+  // 语音列表是异步填充的，就绪后再点亮听力模式
   useEffect(() => {
-    setArchive(loadArchive());
+    setCanSpeak(speechAvailable());
+    return onVoicesReady(() => setCanSpeak(speechAvailable()));
+  }, []);
+
+  // 先用本机档案立刻开张，再拉云端合并 —— 网络慢也不挡着背单词
+  useEffect(() => {
+    const local = loadArchive();
+    setArchive(local);
     setReady(true);
+
+    let cancelled = false;
+    setSync("syncing");
+    fetchArchive().then((remote) => {
+      if (cancelled) return;
+      if (!remote) {
+        setSync("offline");
+        return;
+      }
+      setArchive((current) => merge(current, remote));
+      setSync("synced");
+    });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   useEffect(() => {
-    if (ready) saveArchive(archive);
+    if (!ready) return;
+    saveArchive(archive);
   }, [archive, ready]);
+
+  /** 判定之后把档案推上云端，连点时合并成一次请求。 */
+  const schedulePush = useCallback(() => {
+    window.clearTimeout(pushTimer.current);
+    setSync("syncing");
+    pushTimer.current = window.setTimeout(() => {
+      pushArchive(latest.current).then((ok) => setSync(ok ? "synced" : "failed"));
+    }, PUSH_DELAY);
+  }, []);
+
+  useEffect(() => () => window.clearTimeout(pushTimer.current), []);
 
   const pool = useMemo(() => cardsOfDecks(deckIds), [deckIds]);
 
   /** 开始面板上展示的今日构成。练习中不再重算，免得抽签结果跳动。 */
   const plan: Plan = useMemo(
-    () => buildPlan(pool, archive, size),
-    [pool, archive, size],
+    () => buildPlan(pool, archive, size, mode),
+    [pool, archive, size, mode],
   );
 
   const phase: Phase = !session
@@ -72,9 +125,9 @@ export function useDrill() {
 
   const begin = useCallback(() => {
     if (plan.total === 0) return;
-    setSession(startSession(plan));
+    setSession(startSession(plan, mode));
     setRevealed(false);
-  }, [plan]);
+  }, [plan, mode]);
 
   const judge = useCallback(
     (ok: boolean) => {
@@ -85,7 +138,8 @@ export function useDrill() {
 
         // 长期档案只认一次练习里的第一次判定，重练不重复升级
         if (!prev.graded[key]) {
-          setArchive((a) => grade(a, key, ok));
+          setArchive((a) => grade(a, statKey(key, prev.mode), ok));
+          schedulePush();
         }
 
         const mastered = { ...prev.mastered, [key]: ok };
@@ -116,7 +170,7 @@ export function useDrill() {
       });
       setRevealed(false);
     },
-    [],
+    [schedulePush],
   );
 
   const reveal = useCallback(() => setRevealed(true), []);
@@ -143,10 +197,13 @@ export function useDrill() {
 
   const resetArchive = useCallback(() => {
     clearArchive();
-    setArchive(emptyArchive());
+    const empty = emptyArchive();
+    setArchive(empty);
     setSession(null);
     setRevealed(false);
-  }, []);
+    latest.current = empty;
+    schedulePush();
+  }, [schedulePush]);
 
   const toggleDeck = useCallback((id: string) => {
     setDeckIds((prev) => {
@@ -168,6 +225,7 @@ export function useDrill() {
 
   return {
     archive,
+    sync,
     phase,
     plan,
     session,
@@ -178,7 +236,10 @@ export function useDrill() {
     missedCards,
     deckIds,
     size,
+    mode,
+    canSpeak,
     setSize,
+    setMode,
     toggleDeck,
     selectAllDecks,
     begin,

@@ -983,3 +983,37 @@ button.speak svg {
   color: var(--ink);
   font-weight: 500;
 }
+
+/* ── 高低アクセント ───────────────────────────── */
+.pitch-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pitch {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.pitch-svg {
+  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.pitch-name {
+  font-family: var(--f-mincho);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 3px 8px;
+  white-space: nowrap;
+}

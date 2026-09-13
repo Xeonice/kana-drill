@@ -26,98 +26,59 @@
 
 「漢字 → 読み」不收片假名外来语（サークル、メリット…），正反面是同一串字，考它没意义。
 
-## 朗读
+## 朗读与音高重音
 
-用浏览器自带的 Web Speech API，不联网、不花钱。两个要点：
+单词和例句的音频**预先用 [VOICEVOX](https://github.com/VOICEVOX/voicevox_engine) 生成好**，
+当静态资源发出去（132 条，共 2.3 MB）。词库是固定的小集合，没必要为它常驻一个合成服务：
 
-- **喂给合成器的是汉字表记，不是假名。** 日语 TTS 靠汉字查词典才拿得到正确的音调（アクセント）；
-  给它一串纯平假名，它既分不了词也查不到 accent，只能平读或猜错 —— 「こうじょう」它分不清是「向上」还是「工場」。
-- **按音质排序并过滤。** 分级和黑名单取自 [readium/speech](https://github.com/readium/speech)
-  （Readium 为 Thorium / Readium Web 维护的跨平台语音评测表），内联在 `src/lib/voiceQuality.ts`，
-  不在运行时抓取 —— 这份表变动极慢，而朗读必须离线可用。
+| | 常驻 TTS 服务 | 预生成（本项目） |
+| --- | --- | --- |
+| 服务器 | 要一台扛得住的 | 不用 |
+| HTTPS / 混合内容 | 要配证书 | 没这问题 |
+| 接口被白嫖 | 要加鉴权 | 没接口 |
+| 播放延迟 | 每次合成等 0.5–2 秒 | 瞬时 |
+| 离线 | 不可用 | 可用 |
+| 跨设备音质 | 一致 | 一致 |
 
-日语音色的实际档位：
+音色是 **No.7 アナウンス**（speaker 30）—— VOICEVOX 里的中性播音腔，不是角色声。
+
+VOICEVOX 的合成管线显式建模日语音高重音（`yukarin_sa` 阶段逐 mora 预测 f0），
+所以顺手把每个词的重音数据也烤进了 `src/data/accents.json`，翻面时画成曲线：
+高音的拍在上沿、低音在下沿，降核处下折，和辞典记号一致，并标出平板型／頭高型／尾高型／中高型。
+
+还有一点值得记：**喂给合成器的是汉字表记，不是假名。** 日语 TTS 靠汉字查词典才拿得到
+正确的音调；给它一串纯平假名，它既分不了词也查不到 accent —— 「こうじょう」它分不清
+是「向上」还是「工場」。
+
+### 重新生成音频
+
+加了新词单之后跑一次（需要 Docker 与 ffmpeg）：
+
+```bash
+docker run -d --name voicevox -p 50021:50021 \
+  voicevox/voicevox_engine:cpu-arm64-latest    # Intel 机器去掉 -arm64
+npm run voices
+docker rm -f voicevox
+```
+
+脚本只合成新增的文本，已有的音频复用，删掉的词条留下的孤儿文件会被清理。
+换音色用 `VOICEVOX_SPEAKER=31 npm run voices`（31 是 No.7 読み聞かせ）。
+
+### 退路：系统语音
+
+没有预生成音频的文本（比如刚加完词单还没跑脚本）自动退回浏览器自带的 Web Speech API。
+这条通路的音色分级与黑名单取自 [readium/speech](https://github.com/readium/speech)，
+内联在 `src/lib/voiceQuality.ts`：
 
 | 档位 | 音色 | 哪里有 |
 | --- | --- | --- |
 | 最高音質 | Microsoft Nanami / Keita Online (Natural) | Edge |
-| 高音質 | **Hattori**（Siri premium，需下载） | macOS / iOS |
+| 高音質 | Hattori（Siri premium，需下载） | macOS / iOS |
 | 高音質 | Google 日本語 | Chrome 桌面版预装 |
 | 標準 | Microsoft Ayumi / Haruka / Ichiro | Windows |
-| 簡易 | **Kyoko** / Otoya / O-Ren | macOS / iOS 预装 |
+| 簡易 | Kyoko / Otoya / O-Ren | macOS / iOS 预装 |
 
-macOS 预装的 Kyoko 只是**簡易**档 —— 音调偏平。Apple 设备上想要明显更好的音质，
-在「系统设置 → 辅助功能 → 朗读内容 → 系统语音 → 管理语音」里下载日语的
-**Siri 声音**（Hattori）或任何标着 Premium / 增强的日语语音，免费、离线可用、100–500 MB。
-装完刷新页面就能在「声」那一栏选到。
-
-Grandma、Rocko、Eddy 这类每种语言都配一份的玩具音色（Readium 归类为 novelty 与
-veryLowQuality）会被直接滤掉，不出现在选择器里。听力模式下可以自己换音色并试听，
-当前音色是簡易档时界面会提示怎么升级。
-
-## 熟练度怎么算
-
-每个词有 1-5 级：**答对升一级，答错直接掉回第 1 级**。级别越高，下次再考的间隔越长：
-
-| 等级 | 1 苦手 | 2 あやふや | 3 覚えた | 4 定着中 | 5 定着 |
-| --- | --- | --- | --- | --- | --- |
-| 间隔 | 当天 | 1 天 | 3 天 | 7 天 | 14 天 |
-
-首页据此把今天该练的词分成三类：
-
-- **新出** —— 还没见过的词
-- **要復習** —— 等级 1-2 且已到期的（生词、上次没答对的）
-- **定着確認** —— 等级 3-5 且已到期的，抽检用
-
-到期的旧词优先占名额，新词至少保底拿到一半，免得复习积压时一个新词都学不到。
-
-### 三档练习量
-
-| 量 | 行为 |
-| --- | --- |
-| 軽め | 到期的词里挑 20 个 |
-| 標準 | 到期的词里挑 40 个 |
-| たっぷり | **选中范围全部过一遍，不管到没到期** |
-
-想一次回顾所有内容（比如考前总复习），选中全部词单 + 「たっぷり」。
-
-### 別の日を混ぜる
-
-首页「範囲」那排可以多选词单，选中谁就练谁 —— 熟练度是**按词**记的，不会因为换范围而丢。默认全选。
-
-同一个词被收进多份词单时（Day 3 和 Day 4 都有「人手」），一次练习只考它一遍 —— 否则第二次刚看过必然答对，白送一级。留下的是最需要练的那张：没学过的优先，其次等级低的。两份档案各自保留，会交替出现。
-
-## 加一天新词单
-
-两步，加完 Day 4 的词自动进入同一套复习轮转：
-
-**1.** 复制 `src/data/decks/day3.ts` 成 `day4.ts`，改掉数据和末尾的 `id` / `label`：
-
-```ts
-export const day4: Deck = {
-  id: "day4",     // 长期档案的键的一部分，注册后不要再改
-  label: "Day 4",
-  words,
-};
-```
-
-词条一行一个，顺序是「假名 / 汉字 / 释义 / 例句」：
-
-```ts
-["こうじょう", "向上", "提高", "サービス内容を向上させていくことも必要にはあります"],
-```
-
-片假名外来语把假名和汉字写成同一个值（如 `["メリット", "メリット", "优点", "…"]`），卡片会自动只考释义。例句留空字符串就不显示。
-
-**2.** 在 `src/data/index.ts` 里挂上去：
-
-```ts
-import { day4 } from "./decks/day4";
-
-export const DECKS: Deck[] = [day3, day4];
-```
-
-⚠️ `deck.id` 和词在数组里的位置共同构成档案的键（`day3:12`）。**已经练过的词单不要重排顺序、不要删中间的词**，否则历史成绩会对错人。往末尾追加是安全的。
+Grandma、Rocko、Eddy 这类玩具音色（Readium 归类为 novelty 与 veryLowQuality）会被滤掉。
 
 ## 数据存在哪
 
@@ -179,9 +140,15 @@ src/
   data/index.ts        词单注册表 + 摊平成词池
   lib/archive.ts       Leitner 等级、到期计算、跨设备合并、v1/v2 存档迁移
   lib/session.ts       今日抽词（buildPlan）、模式过滤、跨词单去重
-  lib/speech.ts        朗读与音色挑选
+  lib/tts.ts           朗读：预生成音频优先，系统语音兜底
+  lib/speech.ts        系统语音与音色挑选
+  lib/voiceQuality.ts  音色分级表（取自 readium/speech）
   lib/cloud.ts         云端档案的读写
+  data/accents.json    每个词的音高重音数据（VOICEVOX 生成）
   hooks/useDrill.ts    长期档案 + 单次练习两层状态
   components/          StartPanel / WordCard / ProgressBoard / DoneCard / Ledger / Toolbar
+  components/PitchCurve.tsx   音高重音曲线
 api/archive.ts         读写 Upstash Redis 的 Serverless Function
+scripts/generate-voices.mjs  用 VOICEVOX 烤音频与音高数据
+public/audio/          预生成的音频（132 条 / 2.3 MB）
 ```

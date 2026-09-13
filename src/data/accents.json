@@ -1,0 +1,9333 @@
+{
+ "向上": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.74
+    },
+    {
+     "text": "オ",
+     "pitch": 5.73
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.6
+    },
+    {
+     "text": "オ",
+     "pitch": 5.46
+    }
+   ]
+  }
+ ],
+ "サービス内容を向上させていくことも必要にはあります": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ア",
+     "pitch": 5.66
+    },
+    {
+     "text": "ビ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ス",
+     "pitch": 5.6
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.64
+    },
+    {
+     "text": "イ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.4
+    },
+    {
+     "text": "オ",
+     "pitch": 5.17
+    },
+    {
+     "text": "オ",
+     "pitch": 5.09
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.34
+    },
+    {
+     "text": "オ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.37
+    },
+    {
+     "text": "オ",
+     "pitch": 5.39
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.39
+    },
+    {
+     "text": "セ",
+     "pitch": 5.4
+    },
+    {
+     "text": "テ",
+     "pitch": 5.45
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ト",
+     "pitch": 5.46
+    },
+    {
+     "text": "モ",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 6,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.47
+    },
+    {
+     "text": "オ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.08
+    },
+    {
+     "text": "リ",
+     "pitch": 5.09
+    },
+    {
+     "text": "マ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "修正": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 5.81
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.82
+    },
+    {
+     "text": "セ",
+     "pitch": 5.74
+    },
+    {
+     "text": "エ",
+     "pitch": 5.66
+    }
+   ]
+  }
+ ],
+ "念のため、営業部に修正することは伝えとくよ": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ネ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ン",
+     "pitch": 5.58
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.57
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.55
+    },
+    {
+     "text": "メ",
+     "pitch": 5.47
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "エ",
+     "pitch": 5.23
+    },
+    {
+     "text": "エ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ギョ",
+     "pitch": 5.57
+    },
+    {
+     "text": "オ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ブ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.44
+    },
+    {
+     "text": "セ",
+     "pitch": 5.48
+    },
+    {
+     "text": "エ",
+     "pitch": 5.45
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.45
+    },
+    {
+     "text": "ル",
+     "pitch": 5.42
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ト",
+     "pitch": 5.44
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.34
+    },
+    {
+     "text": "エ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ト",
+     "pitch": 5.41
+    },
+    {
+     "text": "ク",
+     "pitch": 5.18
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.03
+    }
+   ]
+  }
+ ],
+ "修理": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 6.08
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.93
+    },
+    {
+     "text": "リ",
+     "pitch": 5.32
+    }
+   ]
+  }
+ ],
+ "もしそれでも解決しないようなら、修理に出してください": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "モ",
+     "pitch": 5.55
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.42
+    },
+    {
+     "text": "レ",
+     "pitch": 5.32
+    },
+    {
+     "text": "デ",
+     "pitch": 5.32
+    },
+    {
+     "text": "モ",
+     "pitch": 5.18
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.35
+    },
+    {
+     "text": "イ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ツ",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.45
+    },
+    {
+     "text": "イ",
+     "pitch": 5.46
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.43
+    },
+    {
+     "text": "オ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.19
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.02
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 5.85
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.78
+    },
+    {
+     "text": "リ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ダ",
+     "pitch": 5.15
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.18
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.13
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.06
+    },
+    {
+     "text": "サ",
+     "pitch": 5.12
+    },
+    {
+     "text": "イ",
+     "pitch": 5
+    }
+   ]
+  }
+ ],
+ "処理": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.94
+    },
+    {
+     "text": "リ",
+     "pitch": 5.36
+    }
+   ]
+  }
+ ],
+ "実験後、データを統計処理しなくちゃいけない": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.33
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.56
+    },
+    {
+     "text": "ン",
+     "pitch": 5.52
+    },
+    {
+     "text": "ゴ",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "デ",
+     "pitch": 5.43
+    },
+    {
+     "text": "エ",
+     "pitch": 5.67
+    },
+    {
+     "text": "タ",
+     "pitch": 5.38
+    },
+    {
+     "text": "オ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ト",
+     "pitch": 5.35
+    },
+    {
+     "text": "オ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.6
+    },
+    {
+     "text": "エ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.43
+    },
+    {
+     "text": "リ",
+     "pitch": 5.21
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.17
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "チャ",
+     "pitch": 5.28
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.22
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.17
+    },
+    {
+     "text": "イ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "統計": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ト",
+     "pitch": 5.6
+    },
+    {
+     "text": "オ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.64
+    },
+    {
+     "text": "エ",
+     "pitch": 5.59
+    }
+   ]
+  }
+ ],
+ "実験": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.22
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ン",
+     "pitch": 5.48
+    }
+   ]
+  }
+ ],
+ "書類": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ル",
+     "pitch": 5.63
+    },
+    {
+     "text": "イ",
+     "pitch": 5.53
+    }
+   ]
+  }
+ ],
+ "奨学金の申請の書類を書いたんですが、これで大丈夫でしょうか": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.83
+    },
+    {
+     "text": "オ",
+     "pitch": 5.77
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.69
+    },
+    {
+     "text": "ク",
+     "pitch": 5.67
+    },
+    {
+     "text": "キ",
+     "pitch": 5.56
+    },
+    {
+     "text": "ン",
+     "pitch": 5.39
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ン",
+     "pitch": 5.44
+    },
+    {
+     "text": "セ",
+     "pitch": 5.47
+    },
+    {
+     "text": "エ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.41
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ル",
+     "pitch": 5.42
+    },
+    {
+     "text": "イ",
+     "pitch": 5.44
+    },
+    {
+     "text": "オ",
+     "pitch": 5.41
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.51
+    },
+    {
+     "text": "イ",
+     "pitch": 5.44
+    },
+    {
+     "text": "タ",
+     "pitch": 5.27
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ン",
+     "pitch": 5.19
+    },
+    {
+     "text": "デ",
+     "pitch": 5.12
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "ガ",
+     "pitch": 5
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.25
+    },
+    {
+     "text": "レ",
+     "pitch": 5.36
+    },
+    {
+     "text": "デ",
+     "pitch": 5.43
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ダ",
+     "pitch": 5.29
+    },
+    {
+     "text": "イ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.53
+    },
+    {
+     "text": "オ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ブ",
+     "pitch": 5.28
+    },
+    {
+     "text": "デ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.13
+    },
+    {
+     "text": "オ",
+     "pitch": 5.07
+    },
+    {
+     "text": "カ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ],
+ "奨学金": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.89
+    },
+    {
+     "text": "オ",
+     "pitch": 5.82
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ク",
+     "pitch": 5.58
+    },
+    {
+     "text": "キ",
+     "pitch": 5.11
+    },
+    {
+     "text": "ン",
+     "pitch": 5.02
+    }
+   ]
+  }
+ ],
+ "進学": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.8
+    },
+    {
+     "text": "ン",
+     "pitch": 5.82
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.82
+    },
+    {
+     "text": "ク",
+     "pitch": 5.43
+    }
+   ]
+  }
+ ],
+ "大学院に進学する人が増加傾向にあります": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ダ",
+     "pitch": 5.47
+    },
+    {
+     "text": "イ",
+     "pitch": 5.64
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ク",
+     "pitch": 5.69
+    },
+    {
+     "text": "イ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ン",
+     "pitch": 5.46
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ン",
+     "pitch": 5.45
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.47
+    },
+    {
+     "text": "ル",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.44
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ゾ",
+     "pitch": 5.2
+    },
+    {
+     "text": "オ",
+     "pitch": 5.43
+    },
+    {
+     "text": "カ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.61
+    },
+    {
+     "text": "エ",
+     "pitch": 5.53
+    },
+    {
+     "text": "コ",
+     "pitch": 5.29
+    },
+    {
+     "text": "オ",
+     "pitch": 5.21
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.06
+    },
+    {
+     "text": "リ",
+     "pitch": 5.04
+    },
+    {
+     "text": "マ",
+     "pitch": 5.07
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "積極性": [
+  {
+   "accent": 6,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "キョ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.57
+    },
+    {
+     "text": "エ",
+     "pitch": 5.37
+    }
+   ]
+  }
+ ],
+ "彼の態度には積極性がない": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.82
+    },
+    {
+     "text": "レ",
+     "pitch": 5.82
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.38
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.43
+    },
+    {
+     "text": "イ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ド",
+     "pitch": 5.25
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.13
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.02
+    }
+   ]
+  },
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.18
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "キョ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.54
+    },
+    {
+     "text": "エ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.32
+    },
+    {
+     "text": "イ",
+     "pitch": 5.08
+    }
+   ]
+  }
+ ],
+ "説得力": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.63
+    },
+    {
+     "text": "ク",
+     "pitch": 5.71
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ク",
+     "pitch": 4.97
+    }
+   ]
+  }
+ ],
+ "動画を使ってたから、商品のイメージも湧いたし、説得力もあったよ": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ド",
+     "pitch": 5.48
+    },
+    {
+     "text": "オ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.54
+    },
+    {
+     "text": "オ",
+     "pitch": 5.54
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.49
+    },
+    {
+     "text": "タ",
+     "pitch": 5.4
+    },
+    {
+     "text": "カ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.04
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.73
+    },
+    {
+     "text": "オ",
+     "pitch": 5.71
+    },
+    {
+     "text": "ヒ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ン",
+     "pitch": 5.29
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.11
+    },
+    {
+     "text": "メ",
+     "pitch": 5.29
+    },
+    {
+     "text": "エ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.19
+    },
+    {
+     "text": "モ",
+     "pitch": 5.09
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ワ",
+     "pitch": 5.06
+    },
+    {
+     "text": "イ",
+     "pitch": 5.17
+    },
+    {
+     "text": "タ",
+     "pitch": 5.22
+    },
+    {
+     "text": "シ",
+     "pitch": 5.05
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.61
+    },
+    {
+     "text": "ク",
+     "pitch": 5.73
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.69
+    },
+    {
+     "text": "ク",
+     "pitch": 5.42
+    },
+    {
+     "text": "モ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.18
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.1
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ],
+ "湧い": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ワ",
+     "pitch": 5.42
+    },
+    {
+     "text": "イ",
+     "pitch": 5.17
+    }
+   ]
+  }
+ ],
+ "堪能": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ン",
+     "pitch": 5.65
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.66
+    },
+    {
+     "text": "オ",
+     "pitch": 5.47
+    }
+   ]
+  }
+ ],
+ "外国語が堪能で、営業経験もあるスタッフを採用します": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ガ",
+     "pitch": 5.54
+    },
+    {
+     "text": "イ",
+     "pitch": 5.66
+    },
+    {
+     "text": "コ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ク",
+     "pitch": 5.66
+    },
+    {
+     "text": "ゴ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.27
+    },
+    {
+     "text": "ン",
+     "pitch": 5.31
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.31
+    },
+    {
+     "text": "オ",
+     "pitch": 5.27
+    },
+    {
+     "text": "デ",
+     "pitch": 5.21
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "エ",
+     "pitch": 5.29
+    },
+    {
+     "text": "エ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ギョ",
+     "pitch": 5.53
+    },
+    {
+     "text": "オ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.63
+    },
+    {
+     "text": "エ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ン",
+     "pitch": 5.25
+    },
+    {
+     "text": "モ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.25
+    },
+    {
+     "text": "ル",
+     "pitch": 5.36
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "フ",
+     "pitch": 5.15
+    },
+    {
+     "text": "オ",
+     "pitch": 5.04
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.19
+    },
+    {
+     "text": "イ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.24
+    },
+    {
+     "text": "オ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.21
+    },
+    {
+     "text": "マ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "突破": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ト",
+     "pitch": 5.41
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "パ",
+     "pitch": 5.17
+    }
+   ]
+  }
+ ],
+ "全力を尽くして難関を突破する": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ゼ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ン",
+     "pitch": 5.75
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ク",
+     "pitch": 5.62
+    },
+    {
+     "text": "オ",
+     "pitch": 5.57
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 0
+    },
+    {
+     "text": "ク",
+     "pitch": 5.58
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.2
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.12
+    },
+    {
+     "text": "ン",
+     "pitch": 5.25
+    },
+    {
+     "text": "カ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ン",
+     "pitch": 5.32
+    },
+    {
+     "text": "オ",
+     "pitch": 5.31
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ト",
+     "pitch": 5.26
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "パ",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.19
+    },
+    {
+     "text": "ル",
+     "pitch": 5.09
+    }
+   ]
+  }
+ ],
+ "負担": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "フ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ン",
+     "pitch": 5.59
+    }
+   ]
+  }
+ ],
+ "負担に感じるようなら言ってください": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "フ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.68
+    },
+    {
+     "text": "ン",
+     "pitch": 5.67
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.64
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ン",
+     "pitch": 5.6
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ル",
+     "pitch": 5.56
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.59
+    },
+    {
+     "text": "オ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.06
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.28
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.29
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.23
+    },
+    {
+     "text": "サ",
+     "pitch": 5.24
+    },
+    {
+     "text": "イ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ],
+ "不足": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "フ",
+     "pitch": 0
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.72
+    },
+    {
+     "text": "ク",
+     "pitch": 5.29
+    }
+   ]
+  }
+ ],
+ "うちの市でも高齢者向け施設で介護をする人手は不足している": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.38
+    },
+    {
+     "text": "チ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.67
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.69
+    },
+    {
+     "text": "デ",
+     "pitch": 5.5
+    },
+    {
+     "text": "モ",
+     "pitch": 5.18
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.39
+    },
+    {
+     "text": "オ",
+     "pitch": 5.47
+    },
+    {
+     "text": "レ",
+     "pitch": 5.51
+    },
+    {
+     "text": "エ",
+     "pitch": 5.52
+    },
+    {
+     "text": "シャ",
+     "pitch": 5.56
+    },
+    {
+     "text": "ム",
+     "pitch": 5.47
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.19
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.3
+    },
+    {
+     "text": "セ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.21
+    },
+    {
+     "text": "デ",
+     "pitch": 5.07
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.47
+    },
+    {
+     "text": "イ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ゴ",
+     "pitch": 5.31
+    },
+    {
+     "text": "オ",
+     "pitch": 5.18
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.2
+    },
+    {
+     "text": "ル",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.29
+    },
+    {
+     "text": "デ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "フ",
+     "pitch": 0
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ク",
+     "pitch": 5.39
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.27
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.17
+    },
+    {
+     "text": "ル",
+     "pitch": 5.08
+    }
+   ]
+  }
+ ],
+ "人手": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.67
+    },
+    {
+     "text": "デ",
+     "pitch": 5.37
+    }
+   ]
+  }
+ ],
+ "サークル": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.92
+    },
+    {
+     "text": "ア",
+     "pitch": 5.95
+    },
+    {
+     "text": "ク",
+     "pitch": 5.09
+    },
+    {
+     "text": "ル",
+     "pitch": 4.94
+    }
+   ]
+  }
+ ],
+ "市内には歴史を研究している市民サークルがあります": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.77
+    },
+    {
+     "text": "イ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.11
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "レ",
+     "pitch": 5.1
+    },
+    {
+     "text": "キ",
+     "pitch": 0
+    },
+    {
+     "text": "シ",
+     "pitch": 5.5
+    },
+    {
+     "text": "オ",
+     "pitch": 5.47
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ン",
+     "pitch": 5.53
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.53
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.49
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ル",
+     "pitch": 5.35
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ミ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ン",
+     "pitch": 5.51
+    },
+    {
+     "text": "サ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ア",
+     "pitch": 5.53
+    },
+    {
+     "text": "ク",
+     "pitch": 5.33
+    },
+    {
+     "text": "ル",
+     "pitch": 5.17
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.06
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.03
+    },
+    {
+     "text": "リ",
+     "pitch": 5.03
+    },
+    {
+     "text": "マ",
+     "pitch": 5.09
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "歴史": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "レ",
+     "pitch": 5.2
+    },
+    {
+     "text": "キ",
+     "pitch": 0
+    },
+    {
+     "text": "シ",
+     "pitch": 5.08
+    }
+   ]
+  }
+ ],
+ "サポート": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ポ",
+     "pitch": 5.79
+    },
+    {
+     "text": "オ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ト",
+     "pitch": 5.02
+    }
+   ]
+  }
+ ],
+ "一緒に会議に出席して部長をサポートしてもらえないかな": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.62
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.67
+    },
+    {
+     "text": "イ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ギ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.15
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 5.17
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.35
+    },
+    {
+     "text": "キ",
+     "pitch": 5.4
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.36
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ブ",
+     "pitch": 5.23
+    },
+    {
+     "text": "チョ",
+     "pitch": 5.45
+    },
+    {
+     "text": "オ",
+     "pitch": 5.44
+    },
+    {
+     "text": "オ",
+     "pitch": 5.43
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ポ",
+     "pitch": 5.54
+    },
+    {
+     "text": "オ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ト",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.09
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "モ",
+     "pitch": 5.05
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.15
+    },
+    {
+     "text": "エ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.29
+    },
+    {
+     "text": "イ",
+     "pitch": 5.26
+    },
+    {
+     "text": "カ",
+     "pitch": 5.05
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ],
+ "ゼミ": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ゼ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ミ",
+     "pitch": 5.39
+    }
+   ]
+  }
+ ],
+ "大学のゼミで、先生と学生二人が卒業研究について話しています": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ダ",
+     "pitch": 5.48
+    },
+    {
+     "text": "イ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ク",
+     "pitch": 5.58
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.54
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ゼ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ミ",
+     "pitch": 5.39
+    },
+    {
+     "text": "デ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ン",
+     "pitch": 5.6
+    },
+    {
+     "text": "セ",
+     "pitch": 5.68
+    },
+    {
+     "text": "エ",
+     "pitch": 5.58
+    },
+    {
+     "text": "ト",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ガ",
+     "pitch": 5.15
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.44
+    },
+    {
+     "text": "エ",
+     "pitch": 5.41
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "フ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.48
+    },
+    {
+     "text": "リ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.2
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.16
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ギョ",
+     "pitch": 5.5
+    },
+    {
+     "text": "オ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ン",
+     "pitch": 5.55
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 5.45
+    },
+    {
+     "text": "イ",
+     "pitch": 5.39
+    },
+    {
+     "text": "テ",
+     "pitch": 5.2
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.21
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.05
+    },
+    {
+     "text": "マ",
+     "pitch": 5.01
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "ゼミナール": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ゼ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ミ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.71
+    },
+    {
+     "text": "ア",
+     "pitch": 5.54
+    },
+    {
+     "text": "ル",
+     "pitch": 5.12
+    }
+   ]
+  }
+ ],
+ "プレゼンテーション": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "プ",
+     "pitch": 5.54
+    },
+    {
+     "text": "レ",
+     "pitch": 5.64
+    },
+    {
+     "text": "ゼ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ン",
+     "pitch": 5.58
+    },
+    {
+     "text": "テ",
+     "pitch": 5.59
+    },
+    {
+     "text": "エ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.11
+    },
+    {
+     "text": "ン",
+     "pitch": 5.1
+    }
+   ]
+  }
+ ],
+ "課長は今回のプレゼンテーションで何がよくなかったと言っていますか": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.41
+    },
+    {
+     "text": "チョ",
+     "pitch": 5.64
+    },
+    {
+     "text": "オ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.57
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ン",
+     "pitch": 5.68
+    },
+    {
+     "text": "カ",
+     "pitch": 5.44
+    },
+    {
+     "text": "イ",
+     "pitch": 5.27
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "プ",
+     "pitch": 5.23
+    },
+    {
+     "text": "レ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ゼ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ン",
+     "pitch": 5.46
+    },
+    {
+     "text": "テ",
+     "pitch": 5.54
+    },
+    {
+     "text": "エ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ン",
+     "pitch": 5.21
+    },
+    {
+     "text": "デ",
+     "pitch": 5.11
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.15
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ク",
+     "pitch": 5.54
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.39
+    },
+    {
+     "text": "カ",
+     "pitch": 5.21
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.1
+    },
+    {
+     "text": "ト",
+     "pitch": 5.06
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.05
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.24
+    },
+    {
+     "text": "マ",
+     "pitch": 5.25
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "メリット": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "メ",
+     "pitch": 5.36
+    },
+    {
+     "text": "リ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 4.96
+    }
+   ]
+  }
+ ],
+ "そもそも海外留学のメリットとは何でしょうか": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.95
+    },
+    {
+     "text": "モ",
+     "pitch": 5.93
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.42
+    },
+    {
+     "text": "モ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.32
+    },
+    {
+     "text": "イ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.48
+    },
+    {
+     "text": "イ",
+     "pitch": 5.52
+    },
+    {
+     "text": "リュ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ク",
+     "pitch": 5.23
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "メ",
+     "pitch": 5.18
+    },
+    {
+     "text": "リ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.22
+    },
+    {
+     "text": "ト",
+     "pitch": 5.14
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.02
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.5
+    },
+    {
+     "text": "デ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.15
+    },
+    {
+     "text": "オ",
+     "pitch": 5.07
+    },
+    {
+     "text": "カ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ],
+ "赤字": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.17
+    },
+    {
+     "text": "カ",
+     "pitch": 5.69
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.25
+    }
+   ]
+  }
+ ],
+ "だから、閉店って聞いて、実は赤字が原因かなって": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ダ",
+     "pitch": 5.43
+    },
+    {
+     "text": "カ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 6,
+   "moras": [
+    {
+     "text": "ヘ",
+     "pitch": 5.38
+    },
+    {
+     "text": "エ",
+     "pitch": 5.51
+    },
+    {
+     "text": "テ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ン",
+     "pitch": 5.52
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.48
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "キ",
+     "pitch": 5.45
+    },
+    {
+     "text": "イ",
+     "pitch": 5.37
+    },
+    {
+     "text": "テ",
+     "pitch": 5.27
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.3
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.35
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.1
+    },
+    {
+     "text": "カ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.33
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.35
+    }
+   ]
+  },
+  {
+   "accent": 8,
+   "moras": [
+    {
+     "text": "ゲ",
+     "pitch": 5.27
+    },
+    {
+     "text": "ン",
+     "pitch": 5.45
+    },
+    {
+     "text": "イ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ン",
+     "pitch": 5.48
+    },
+    {
+     "text": "カ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.01
+    }
+   ]
+  }
+ ],
+ "売上": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.26
+    },
+    {
+     "text": "リ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ア",
+     "pitch": 5.6
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.32
+    }
+   ]
+  }
+ ],
+ "売上を伸ばすことを考えるよりも経費節減を考えた方がいい": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.4
+    },
+    {
+     "text": "リ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ア",
+     "pitch": 5.6
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.51
+    },
+    {
+     "text": "オ",
+     "pitch": 5.52
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ノ",
+     "pitch": 5.47
+    },
+    {
+     "text": "バ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ト",
+     "pitch": 5.26
+    },
+    {
+     "text": "オ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ン",
+     "pitch": 5.42
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.5
+    },
+    {
+     "text": "エ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ル",
+     "pitch": 5.4
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.26
+    },
+    {
+     "text": "リ",
+     "pitch": 5.17
+    },
+    {
+     "text": "モ",
+     "pitch": 5.06
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.34
+    },
+    {
+     "text": "エ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.58
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ン",
+     "pitch": 5.19
+    },
+    {
+     "text": "オ",
+     "pitch": 5.09
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ン",
+     "pitch": 5.34
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.39
+    },
+    {
+     "text": "エ",
+     "pitch": 5.35
+    },
+    {
+     "text": "タ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ホ",
+     "pitch": 5.29
+    },
+    {
+     "text": "オ",
+     "pitch": 5.21
+    },
+    {
+     "text": "ガ",
+     "pitch": 5
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.02
+    },
+    {
+     "text": "イ",
+     "pitch": 4.97
+    }
+   ]
+  }
+ ],
+ "経費": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.97
+    },
+    {
+     "text": "エ",
+     "pitch": 5.99
+    },
+    {
+     "text": "ヒ",
+     "pitch": 4.73
+    }
+   ]
+  }
+ ],
+ "節減": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ン",
+     "pitch": 5.5
+    }
+   ]
+  }
+ ],
+ "打ち合わせ": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.29
+    },
+    {
+     "text": "チ",
+     "pitch": 5.72
+    },
+    {
+     "text": "ア",
+     "pitch": 5.69
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.71
+    },
+    {
+     "text": "セ",
+     "pitch": 5.29
+    }
+   ]
+  }
+ ],
+ "早急に部長と打ち合わせをしてもらいたい": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.79
+    },
+    {
+     "text": "オ",
+     "pitch": 5.78
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.68
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.64
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.59
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ブ",
+     "pitch": 5.38
+    },
+    {
+     "text": "チョ",
+     "pitch": 5.53
+    },
+    {
+     "text": "オ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ト",
+     "pitch": 5.5
+    }
+   ]
+  },
+  {
+   "accent": 6,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.42
+    },
+    {
+     "text": "チ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ア",
+     "pitch": 5.49
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.48
+    },
+    {
+     "text": "セ",
+     "pitch": 5.52
+    },
+    {
+     "text": "オ",
+     "pitch": 5.47
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.42
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "モ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.29
+    },
+    {
+     "text": "イ",
+     "pitch": 5.26
+    },
+    {
+     "text": "タ",
+     "pitch": 5.22
+    },
+    {
+     "text": "イ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "延期": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "エ",
+     "pitch": 5.33
+    },
+    {
+     "text": "ン",
+     "pitch": 5.71
+    },
+    {
+     "text": "キ",
+     "pitch": 5.3
+    }
+   ]
+  }
+ ],
+ "やっぱり延期するしかないですか": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ヤ",
+     "pitch": 5.33
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "パ",
+     "pitch": 5.7
+    },
+    {
+     "text": "リ",
+     "pitch": 5.47
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "エ",
+     "pitch": 5.25
+    },
+    {
+     "text": "ン",
+     "pitch": 5.42
+    },
+    {
+     "text": "キ",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.52
+    },
+    {
+     "text": "ル",
+     "pitch": 5.5
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.3
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.27
+    },
+    {
+     "text": "イ",
+     "pitch": 5.36
+    },
+    {
+     "text": "デ",
+     "pitch": 5.17
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.13
+    }
+   ]
+  }
+ ],
+ "改善": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.6
+    },
+    {
+     "text": "イ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ゼ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ン",
+     "pitch": 5.41
+    }
+   ]
+  }
+ ],
+ "サービスの改善を検討して。顧客アンケートの結果を踏まえてね": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.84
+    },
+    {
+     "text": "ア",
+     "pitch": 5.81
+    },
+    {
+     "text": "ビ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ス",
+     "pitch": 5.24
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.27
+    },
+    {
+     "text": "イ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ゼ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ン",
+     "pitch": 5.32
+    },
+    {
+     "text": "オ",
+     "pitch": 5.3
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ン",
+     "pitch": 5.32
+    },
+    {
+     "text": "ト",
+     "pitch": 5.3
+    },
+    {
+     "text": "オ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.18
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.24
+    },
+    {
+     "text": "キャ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ク",
+     "pitch": 5.72
+    },
+    {
+     "text": "ア",
+     "pitch": 5.72
+    },
+    {
+     "text": "ン",
+     "pitch": 5.67
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.55
+    },
+    {
+     "text": "エ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ト",
+     "pitch": 5.25
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.23
+    },
+    {
+     "text": "オ",
+     "pitch": 5.2
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "フ",
+     "pitch": 5.2
+    },
+    {
+     "text": "マ",
+     "pitch": 5.27
+    },
+    {
+     "text": "エ",
+     "pitch": 5.31
+    },
+    {
+     "text": "テ",
+     "pitch": 5.05
+    },
+    {
+     "text": "ネ",
+     "pitch": 5
+    }
+   ]
+  }
+ ],
+ "顧客": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.39
+    },
+    {
+     "text": "キャ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ク",
+     "pitch": 5.03
+    }
+   ]
+  }
+ ],
+ "鍵": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ギ",
+     "pitch": 4.73
+    }
+   ]
+  }
+ ],
+ "常に落ち着いてプレーできるようになれるかが鍵になる": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 5.86
+    },
+    {
+     "text": "ネ",
+     "pitch": 5.81
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.08
+    },
+    {
+     "text": "チ",
+     "pitch": 0
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.43
+    },
+    {
+     "text": "イ",
+     "pitch": 5.39
+    },
+    {
+     "text": "テ",
+     "pitch": 5.41
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "プ",
+     "pitch": 5.42
+    },
+    {
+     "text": "レ",
+     "pitch": 5.46
+    },
+    {
+     "text": "エ",
+     "pitch": 5.35
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "デ",
+     "pitch": 5.15
+    },
+    {
+     "text": "キ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ル",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.31
+    },
+    {
+     "text": "オ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.11
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.08
+    },
+    {
+     "text": "レ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ル",
+     "pitch": 5.32
+    },
+    {
+     "text": "カ",
+     "pitch": 5.19
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.03
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ギ",
+     "pitch": 5.21
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ル",
+     "pitch": 4.98
+    }
+   ]
+  }
+ ],
+ "確保": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.81
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ホ",
+     "pitch": 4.91
+    }
+   ]
+  }
+ ],
+ "一応そっちは人手は確保できそうだ": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.34
+    },
+    {
+     "text": "チ",
+     "pitch": 5.66
+    },
+    {
+     "text": "オ",
+     "pitch": 5.65
+    },
+    {
+     "text": "オ",
+     "pitch": 5.61
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "チ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.45
+    },
+    {
+     "text": "デ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.33
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ホ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "デ",
+     "pitch": 5.11
+    },
+    {
+     "text": "キ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.22
+    },
+    {
+     "text": "オ",
+     "pitch": 5.09
+    },
+    {
+     "text": "ダ",
+     "pitch": 4.99
+    }
+   ]
+  }
+ ],
+ "検討": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.78
+    },
+    {
+     "text": "ン",
+     "pitch": 5.8
+    },
+    {
+     "text": "ト",
+     "pitch": 5.65
+    },
+    {
+     "text": "オ",
+     "pitch": 5.39
+    }
+   ]
+  }
+ ],
+ "会議で予算案を検討する": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.87
+    },
+    {
+     "text": "イ",
+     "pitch": 5.82
+    },
+    {
+     "text": "ギ",
+     "pitch": 5.41
+    },
+    {
+     "text": "デ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.1
+    },
+    {
+     "text": "サ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ン",
+     "pitch": 5.57
+    },
+    {
+     "text": "ア",
+     "pitch": 5.49
+    },
+    {
+     "text": "ン",
+     "pitch": 5.28
+    },
+    {
+     "text": "オ",
+     "pitch": 5.11
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.3
+    },
+    {
+     "text": "ン",
+     "pitch": 5.3
+    },
+    {
+     "text": "ト",
+     "pitch": 5.3
+    },
+    {
+     "text": "オ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.23
+    },
+    {
+     "text": "ル",
+     "pitch": 5.12
+    }
+   ]
+  }
+ ],
+ "急務": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "キュ",
+     "pitch": 6.25
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.93
+    },
+    {
+     "text": "ム",
+     "pitch": 5.31
+    }
+   ]
+  }
+ ],
+ "特に今、優秀な人材の確保が急務だと考えています": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ト",
+     "pitch": 5.84
+    },
+    {
+     "text": "ク",
+     "pitch": 5.74
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.16
+    },
+    {
+     "text": "マ",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ユ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.6
+    },
+    {
+     "text": "シュ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.6
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ン",
+     "pitch": 5.53
+    },
+    {
+     "text": "ザ",
+     "pitch": 5.49
+    },
+    {
+     "text": "イ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.48
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ホ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "キュ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ム",
+     "pitch": 5.44
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.18
+    },
+    {
+     "text": "ト",
+     "pitch": 5.04
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ン",
+     "pitch": 5.31
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.36
+    },
+    {
+     "text": "エ",
+     "pitch": 5.33
+    },
+    {
+     "text": "テ",
+     "pitch": 5.18
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.06
+    },
+    {
+     "text": "マ",
+     "pitch": 5.01
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "工夫": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "フ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.5
+    }
+   ]
+  }
+ ],
+ "構図を工夫することによっても感じは違ってきますよ": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.76
+    },
+    {
+     "text": "オ",
+     "pitch": 5.73
+    },
+    {
+     "text": "ズ",
+     "pitch": 5.57
+    },
+    {
+     "text": "オ",
+     "pitch": 5.59
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "フ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.61
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.57
+    },
+    {
+     "text": "ル",
+     "pitch": 5.53
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ト",
+     "pitch": 5.5
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.29
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.34
+    },
+    {
+     "text": "モ",
+     "pitch": 5.28
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ン",
+     "pitch": 5.37
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "チ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "キ",
+     "pitch": 5.42
+    },
+    {
+     "text": "マ",
+     "pitch": 5.38
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ],
+ "構図": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.68
+    },
+    {
+     "text": "オ",
+     "pitch": 5.71
+    },
+    {
+     "text": "ズ",
+     "pitch": 5.3
+    }
+   ]
+  }
+ ],
+ "苦労": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 6.03
+    },
+    {
+     "text": "ロ",
+     "pitch": 5.71
+    },
+    {
+     "text": "オ",
+     "pitch": 5.03
+    }
+   ]
+  }
+ ],
+ "苦労した甲斐がある": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.98
+    },
+    {
+     "text": "ロ",
+     "pitch": 5.91
+    },
+    {
+     "text": "オ",
+     "pitch": 5.41
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.09
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.43
+    },
+    {
+     "text": "イ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.04
+    },
+    {
+     "text": "ル",
+     "pitch": 4.98
+    }
+   ]
+  }
+ ],
+ "甲斐": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.86
+    },
+    {
+     "text": "イ",
+     "pitch": 5.33
+    }
+   ]
+  }
+ ],
+ "減少": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ゲ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ン",
+     "pitch": 5.69
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.64
+    },
+    {
+     "text": "オ",
+     "pitch": 5.5
+    }
+   ]
+  }
+ ],
+ "宿泊客が減少し、業績が落ち込んでいる今、経営の改善が必要です": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 0
+    },
+    {
+     "text": "ク",
+     "pitch": 5.64
+    },
+    {
+     "text": "ハ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ク",
+     "pitch": 5.57
+    },
+    {
+     "text": "キャ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ク",
+     "pitch": 5.31
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ゲ",
+     "pitch": 5.15
+    },
+    {
+     "text": "ン",
+     "pitch": 5.27
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.29
+    },
+    {
+     "text": "オ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ギョ",
+     "pitch": 5.38
+    },
+    {
+     "text": "オ",
+     "pitch": 5.53
+    },
+    {
+     "text": "セ",
+     "pitch": 5.55
+    },
+    {
+     "text": "キ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.46
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.42
+    },
+    {
+     "text": "チ",
+     "pitch": 0
+    },
+    {
+     "text": "コ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ン",
+     "pitch": 5.52
+    },
+    {
+     "text": "デ",
+     "pitch": 5.31
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.19
+    },
+    {
+     "text": "ル",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.15
+    },
+    {
+     "text": "マ",
+     "pitch": 5.03
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ケ",
+     "pitch": 5.4
+    },
+    {
+     "text": "エ",
+     "pitch": 5.56
+    },
+    {
+     "text": "エ",
+     "pitch": 5.61
+    },
+    {
+     "text": "エ",
+     "pitch": 5.58
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.53
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.48
+    },
+    {
+     "text": "イ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ゼ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ン",
+     "pitch": 5.4
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.31
+    },
+    {
+     "text": "オ",
+     "pitch": 5.27
+    },
+    {
+     "text": "デ",
+     "pitch": 5.18
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "克服": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "フ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ク",
+     "pitch": 4.75
+    }
+   ]
+  }
+ ],
+ "最近それを克服しつつあるんです": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.66
+    },
+    {
+     "text": "イ",
+     "pitch": 5.69
+    },
+    {
+     "text": "キ",
+     "pitch": 5.68
+    },
+    {
+     "text": "ン",
+     "pitch": 5.64
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.66
+    },
+    {
+     "text": "レ",
+     "pitch": 5.6
+    },
+    {
+     "text": "オ",
+     "pitch": 5.56
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "フ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ク",
+     "pitch": 5.5
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.2
+    },
+    {
+     "text": "ル",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ン",
+     "pitch": 5.12
+    },
+    {
+     "text": "デ",
+     "pitch": 5
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "故障": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.69
+    },
+    {
+     "text": "オ",
+     "pitch": 5.52
+    }
+   ]
+  }
+ ],
+ "機械の故障といろいろあって、今日はさんざんだったよ": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "キ",
+     "pitch": 5.63
+    },
+    {
+     "text": "カ",
+     "pitch": 5.73
+    },
+    {
+     "text": "イ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.29
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.35
+    },
+    {
+     "text": "オ",
+     "pitch": 5.33
+    },
+    {
+     "text": "ト",
+     "pitch": 5.34
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.29
+    },
+    {
+     "text": "ロ",
+     "pitch": 5.32
+    },
+    {
+     "text": "イ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ロ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.32
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.04
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "キョ",
+     "pitch": 5.7
+    },
+    {
+     "text": "オ",
+     "pitch": 5.64
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.25
+    }
+   ]
+  },
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ン",
+     "pitch": 5.43
+    },
+    {
+     "text": "ザ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ン",
+     "pitch": 5.45
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "左右": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.91
+    },
+    {
+     "text": "ユ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.12
+    }
+   ]
+  }
+ ],
+ "感情に左右されやすい": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ン",
+     "pitch": 5.78
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.67
+    },
+    {
+     "text": "オ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.61
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ユ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.19
+    },
+    {
+     "text": "レ",
+     "pitch": 5.15
+    },
+    {
+     "text": "ヤ",
+     "pitch": 5.19
+    },
+    {
+     "text": "ス",
+     "pitch": 5.21
+    },
+    {
+     "text": "イ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "持参": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.22
+    },
+    {
+     "text": "サ",
+     "pitch": 5.71
+    },
+    {
+     "text": "ン",
+     "pitch": 5.63
+    }
+   ]
+  }
+ ],
+ "必ずペンを持参してください": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.67
+    },
+    {
+     "text": "ズ",
+     "pitch": 5.48
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ペ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ン",
+     "pitch": 5.51
+    },
+    {
+     "text": "オ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.11
+    },
+    {
+     "text": "サ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ン",
+     "pitch": 5.43
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.38
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.35
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.29
+    },
+    {
+     "text": "サ",
+     "pitch": 5.28
+    },
+    {
+     "text": "イ",
+     "pitch": 5.07
+    }
+   ]
+  }
+ ],
+ "事情": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.33
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.59
+    },
+    {
+     "text": "オ",
+     "pitch": 5.36
+    }
+   ]
+  }
+ ],
+ "このような事情を背景に、現在様々な取り組みが始まっています": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.6
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.67
+    },
+    {
+     "text": "オ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.24
+    },
+    {
+     "text": "オ",
+     "pitch": 5.37
+    },
+    {
+     "text": "オ",
+     "pitch": 5.33
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.42
+    },
+    {
+     "text": "イ",
+     "pitch": 5.38
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.21
+    },
+    {
+     "text": "エ",
+     "pitch": 5.11
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.04
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ゲ",
+     "pitch": 5.45
+    },
+    {
+     "text": "ン",
+     "pitch": 5.64
+    },
+    {
+     "text": "ザ",
+     "pitch": 5.44
+    },
+    {
+     "text": "イ",
+     "pitch": 5.25
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.24
+    },
+    {
+     "text": "マ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ザ",
+     "pitch": 5.35
+    },
+    {
+     "text": "マ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.13
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ト",
+     "pitch": 5.17
+    },
+    {
+     "text": "リ",
+     "pitch": 5.17
+    },
+    {
+     "text": "ク",
+     "pitch": 5.31
+    },
+    {
+     "text": "ミ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.19
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.16
+    },
+    {
+     "text": "マ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.28
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.19
+    },
+    {
+     "text": "マ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "背景": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.82
+    },
+    {
+     "text": "イ",
+     "pitch": 5.86
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.19
+    },
+    {
+     "text": "エ",
+     "pitch": 5.03
+    }
+   ]
+  }
+ ],
+ "指針": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "シ",
+     "pitch": 5.67
+    },
+    {
+     "text": "ン",
+     "pitch": 5.5
+    }
+   ]
+  }
+ ],
+ "上のほうから、会議効率化をはかるための指針っていうのが来ている": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.48
+    },
+    {
+     "text": "エ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.62
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ホ",
+     "pitch": 5.63
+    },
+    {
+     "text": "オ",
+     "pitch": 5.52
+    },
+    {
+     "text": "カ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.06
+    }
+   ]
+  },
+  {
+   "accent": 9,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.35
+    },
+    {
+     "text": "イ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ギ",
+     "pitch": 5.47
+    },
+    {
+     "text": "コ",
+     "pitch": 5.56
+    },
+    {
+     "text": "オ",
+     "pitch": 5.51
+    },
+    {
+     "text": "リ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ツ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.43
+    },
+    {
+     "text": "オ",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.31
+    },
+    {
+     "text": "カ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ル",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.24
+    },
+    {
+     "text": "メ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "シ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ン",
+     "pitch": 5.38
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.4
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.36
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ノ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.16
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "キ",
+     "pitch": 5.2
+    },
+    {
+     "text": "テ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.03
+    },
+    {
+     "text": "ル",
+     "pitch": 4.96
+    }
+   ]
+  }
+ ],
+ "出費": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 5.58
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ピ",
+     "pitch": 4.69
+    }
+   ]
+  }
+ ],
+ "近頃は無駄な出費は抑えたいと思います": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "チ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.74
+    },
+    {
+     "text": "ゴ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ロ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.15
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ム",
+     "pitch": 5.11
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.45
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ピ",
+     "pitch": 5.45
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.38
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.21
+    },
+    {
+     "text": "サ",
+     "pitch": 5.45
+    },
+    {
+     "text": "エ",
+     "pitch": 5.49
+    },
+    {
+     "text": "タ",
+     "pitch": 5.54
+    },
+    {
+     "text": "イ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ト",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.07
+    },
+    {
+     "text": "モ",
+     "pitch": 5.05
+    },
+    {
+     "text": "イ",
+     "pitch": 5.07
+    },
+    {
+     "text": "マ",
+     "pitch": 5.07
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "抑える": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.17
+    },
+    {
+     "text": "サ",
+     "pitch": 5.64
+    },
+    {
+     "text": "エ",
+     "pitch": 5.69
+    },
+    {
+     "text": "ル",
+     "pitch": 5.28
+    }
+   ]
+  }
+ ],
+ "渋滞": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジュ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.62
+    },
+    {
+     "text": "タ",
+     "pitch": 5.62
+    },
+    {
+     "text": "イ",
+     "pitch": 5.55
+    }
+   ]
+  }
+ ],
+ "交通渋滞に巻き込まれる": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.85
+    },
+    {
+     "text": "オ",
+     "pitch": 5.84
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.72
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.66
+    },
+    {
+     "text": "ジュ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.64
+    },
+    {
+     "text": "タ",
+     "pitch": 5.41
+    },
+    {
+     "text": "イ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "マ",
+     "pitch": 5.07
+    },
+    {
+     "text": "キ",
+     "pitch": 0
+    },
+    {
+     "text": "コ",
+     "pitch": 5.43
+    },
+    {
+     "text": "マ",
+     "pitch": 5.34
+    },
+    {
+     "text": "レ",
+     "pitch": 5.16
+    },
+    {
+     "text": "ル",
+     "pitch": 5
+    }
+   ]
+  }
+ ],
+ "従来": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ジュ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.81
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.3
+    },
+    {
+     "text": "イ",
+     "pitch": 5.09
+    }
+   ]
+  }
+ ],
+ "従来のガソリン車に比べて安定性に改良の余地がある": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ジュ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.78
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.49
+    },
+    {
+     "text": "イ",
+     "pitch": 5.27
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ガ",
+     "pitch": 5.09
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.39
+    },
+    {
+     "text": "リ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ン",
+     "pitch": 5.45
+    },
+    {
+     "text": "シャ",
+     "pitch": 5.5
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.34
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.27
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.29
+    },
+    {
+     "text": "ベ",
+     "pitch": 5.33
+    },
+    {
+     "text": "テ",
+     "pitch": 5.29
+    }
+   ]
+  },
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.23
+    },
+    {
+     "text": "ン",
+     "pitch": 5.39
+    },
+    {
+     "text": "テ",
+     "pitch": 5.5
+    },
+    {
+     "text": "エ",
+     "pitch": 5.47
+    },
+    {
+     "text": "セ",
+     "pitch": 5.47
+    },
+    {
+     "text": "エ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.36
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.35
+    },
+    {
+     "text": "イ",
+     "pitch": 5.47
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.51
+    },
+    {
+     "text": "オ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.49
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.48
+    },
+    {
+     "text": "チ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.05
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.03
+    },
+    {
+     "text": "ル",
+     "pitch": 4.97
+    }
+   ]
+  }
+ ],
+ "改良": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.62
+    },
+    {
+     "text": "イ",
+     "pitch": 5.69
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.56
+    },
+    {
+     "text": "オ",
+     "pitch": 5.44
+    }
+   ]
+  }
+ ],
+ "取得": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "シュ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.76
+    },
+    {
+     "text": "ク",
+     "pitch": 5.17
+    }
+   ]
+  }
+ ],
+ "学問を追求する人もいれば、資格取得を目指す人もいます": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ガ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ク",
+     "pitch": 5.71
+    },
+    {
+     "text": "モ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ン",
+     "pitch": 5.41
+    },
+    {
+     "text": "オ",
+     "pitch": 5.2
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 5.44
+    },
+    {
+     "text": "イ",
+     "pitch": 5.44
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.47
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.47
+    },
+    {
+     "text": "ル",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.43
+    },
+    {
+     "text": "モ",
+     "pitch": 5.27
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.22
+    },
+    {
+     "text": "レ",
+     "pitch": 5.25
+    },
+    {
+     "text": "バ",
+     "pitch": 5.05
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "シュ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ト",
+     "pitch": 5.54
+    },
+    {
+     "text": "ク",
+     "pitch": 5.33
+    },
+    {
+     "text": "オ",
+     "pitch": 5.19
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "メ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ザ",
+     "pitch": 5.29
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 5.18
+    },
+    {
+     "text": "ト",
+     "pitch": 5.15
+    },
+    {
+     "text": "モ",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.03
+    },
+    {
+     "text": "マ",
+     "pitch": 5.07
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "追求する": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ツ",
+     "pitch": 5.82
+    },
+    {
+     "text": "イ",
+     "pitch": 5.8
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.6
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.56
+    },
+    {
+     "text": "ル",
+     "pitch": 5.41
+    }
+   ]
+  }
+ ],
+ "昇進": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.74
+    },
+    {
+     "text": "オ",
+     "pitch": 5.76
+    },
+    {
+     "text": "シ",
+     "pitch": 5.57
+    },
+    {
+     "text": "ン",
+     "pitch": 5.44
+    }
+   ]
+  }
+ ],
+ "お陰様で昇進できました": [
+  {
+   "accent": 6,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.28
+    },
+    {
+     "text": "カ",
+     "pitch": 5.67
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.64
+    },
+    {
+     "text": "サ",
+     "pitch": 5.66
+    },
+    {
+     "text": "マ",
+     "pitch": 5.58
+    },
+    {
+     "text": "デ",
+     "pitch": 5.48
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.5
+    },
+    {
+     "text": "オ",
+     "pitch": 5.54
+    },
+    {
+     "text": "シ",
+     "pitch": 5.56
+    },
+    {
+     "text": "ン",
+     "pitch": 5.51
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "デ",
+     "pitch": 5.45
+    },
+    {
+     "text": "キ",
+     "pitch": 5.43
+    },
+    {
+     "text": "マ",
+     "pitch": 5.4
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.01
+    }
+   ]
+  }
+ ],
+ "上昇": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジョ",
+     "pitch": 5.41
+    },
+    {
+     "text": "オ",
+     "pitch": 5.64
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.61
+    },
+    {
+     "text": "オ",
+     "pitch": 5.51
+    }
+   ]
+  }
+ ],
+ "高級食品の売上額が上昇しているのは一目瞭然だ": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.73
+    },
+    {
+     "text": "オ",
+     "pitch": 5.72
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.61
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ショ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ヒ",
+     "pitch": 5.56
+    },
+    {
+     "text": "ン",
+     "pitch": 5.54
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.53
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.47
+    },
+    {
+     "text": "リ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ア",
+     "pitch": 5.54
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ク",
+     "pitch": 5.34
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジョ",
+     "pitch": 5.17
+    },
+    {
+     "text": "オ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ショ",
+     "pitch": 5.47
+    },
+    {
+     "text": "オ",
+     "pitch": 5.45
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.48
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.45
+    },
+    {
+     "text": "ル",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ノ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.06
+    }
+   ]
+  },
+  {
+   "accent": 9,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.02
+    },
+    {
+     "text": "チ",
+     "pitch": 5.36
+    },
+    {
+     "text": "モ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ク",
+     "pitch": 5.55
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.47
+    },
+    {
+     "text": "オ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ゼ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ン",
+     "pitch": 5.18
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.1
+    }
+   ]
+  }
+ ],
+ "削除": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.89
+    },
+    {
+     "text": "ク",
+     "pitch": 5.63
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.03
+    }
+   ]
+  }
+ ],
+ "データが削除された": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "デ",
+     "pitch": 5.56
+    },
+    {
+     "text": "エ",
+     "pitch": 5.84
+    },
+    {
+     "text": "タ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.49
+    },
+    {
+     "text": "ク",
+     "pitch": 5.64
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.33
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.17
+    },
+    {
+     "text": "レ",
+     "pitch": 5.09
+    },
+    {
+     "text": "タ",
+     "pitch": 5.08
+    }
+   ]
+  }
+ ],
+ "賛成": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ン",
+     "pitch": 5.75
+    },
+    {
+     "text": "セ",
+     "pitch": 5.71
+    },
+    {
+     "text": "エ",
+     "pitch": 5.53
+    }
+   ]
+  }
+ ],
+ "僕は自転車乗るから、駐輪場が広くなることに賛成だ": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ボ",
+     "pitch": 5.58
+    },
+    {
+     "text": "ク",
+     "pitch": 5.67
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.24
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.13
+    },
+    {
+     "text": "テ",
+     "pitch": 5.59
+    },
+    {
+     "text": "ン",
+     "pitch": 5.59
+    },
+    {
+     "text": "シャ",
+     "pitch": 5.32
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ノ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ル",
+     "pitch": 5.15
+    },
+    {
+     "text": "カ",
+     "pitch": 5.13
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.01
+    }
+   ]
+  },
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "チュ",
+     "pitch": 5.56
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.61
+    },
+    {
+     "text": "リ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ン",
+     "pitch": 5.59
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.51
+    },
+    {
+     "text": "オ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ロ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ク",
+     "pitch": 5.55
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ル",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.22
+    },
+    {
+     "text": "ト",
+     "pitch": 5.25
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.19
+    },
+    {
+     "text": "ン",
+     "pitch": 5.22
+    },
+    {
+     "text": "セ",
+     "pitch": 5.22
+    },
+    {
+     "text": "エ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.08
+    }
+   ]
+  }
+ ],
+ "至急": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.68
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.59
+    }
+   ]
+  }
+ ],
+ "至急お返事ください": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "キュ",
+     "pitch": 5.83
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.81
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.76
+    },
+    {
+     "text": "ヘ",
+     "pitch": 5.76
+    },
+    {
+     "text": "ン",
+     "pitch": 5.67
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.37
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.21
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.15
+    },
+    {
+     "text": "サ",
+     "pitch": 5.21
+    },
+    {
+     "text": "イ",
+     "pitch": 5.04
+    }
+   ]
+  }
+ ],
+ "設置": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "チ",
+     "pitch": 4.94
+    }
+   ]
+  }
+ ],
+ "自販機がたくさん設置された": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ハ",
+     "pitch": 5.81
+    },
+    {
+     "text": "ン",
+     "pitch": 5.82
+    },
+    {
+     "text": "キ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.11
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "サ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ン",
+     "pitch": 5.42
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "チ",
+     "pitch": 0
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.35
+    },
+    {
+     "text": "レ",
+     "pitch": 5.23
+    },
+    {
+     "text": "タ",
+     "pitch": 5.1
+    }
+   ]
+  }
+ ],
+ "増加": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ゾ",
+     "pitch": 5.35
+    },
+    {
+     "text": "オ",
+     "pitch": 5.63
+    },
+    {
+     "text": "カ",
+     "pitch": 5.38
+    }
+   ]
+  }
+ ],
+ "レストラン改造などによる客の増加に期待する": [
+  {
+   "accent": 6,
+   "moras": [
+    {
+     "text": "レ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.65
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ン",
+     "pitch": 5.61
+    },
+    {
+     "text": "カ",
+     "pitch": 5.67
+    },
+    {
+     "text": "イ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ゾ",
+     "pitch": 5.49
+    },
+    {
+     "text": "オ",
+     "pitch": 5.45
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ド",
+     "pitch": 5.19
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.12
+    },
+    {
+     "text": "ル",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "キャ",
+     "pitch": 5.27
+    },
+    {
+     "text": "ク",
+     "pitch": 5.36
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.33
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ゾ",
+     "pitch": 5.26
+    },
+    {
+     "text": "オ",
+     "pitch": 5.37
+    },
+    {
+     "text": "カ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.35
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "キ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.28
+    },
+    {
+     "text": "イ",
+     "pitch": 5.22
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.2
+    },
+    {
+     "text": "ル",
+     "pitch": 5.09
+    }
+   ]
+  }
+ ],
+ "対応": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.48
+    },
+    {
+     "text": "イ",
+     "pitch": 5.59
+    },
+    {
+     "text": "オ",
+     "pitch": 5.59
+    },
+    {
+     "text": "オ",
+     "pitch": 5.52
+    }
+   ]
+  }
+ ],
+ "対応策を考える必要がある": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.58
+    },
+    {
+     "text": "イ",
+     "pitch": 5.72
+    },
+    {
+     "text": "オ",
+     "pitch": 5.75
+    },
+    {
+     "text": "オ",
+     "pitch": 5.72
+    },
+    {
+     "text": "サ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ク",
+     "pitch": 5.29
+    },
+    {
+     "text": "オ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.3
+    },
+    {
+     "text": "ン",
+     "pitch": 5.42
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.49
+    },
+    {
+     "text": "エ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ル",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.29
+    },
+    {
+     "text": "オ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.19
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.16
+    },
+    {
+     "text": "ル",
+     "pitch": 5.01
+    }
+   ]
+  }
+ ],
+ "対策": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.5
+    },
+    {
+     "text": "イ",
+     "pitch": 5.62
+    },
+    {
+     "text": "サ",
+     "pitch": 5.71
+    },
+    {
+     "text": "ク",
+     "pitch": 5.43
+    }
+   ]
+  }
+ ],
+ "どうもうまい対策がない": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ド",
+     "pitch": 5.56
+    },
+    {
+     "text": "オ",
+     "pitch": 5.78
+    },
+    {
+     "text": "モ",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.12
+    },
+    {
+     "text": "マ",
+     "pitch": 5.33
+    },
+    {
+     "text": "イ",
+     "pitch": 5.34
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.19
+    },
+    {
+     "text": "イ",
+     "pitch": 5.22
+    },
+    {
+     "text": "サ",
+     "pitch": 5.29
+    },
+    {
+     "text": "ク",
+     "pitch": 5.26
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.19
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.2
+    },
+    {
+     "text": "イ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "達成": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.63
+    },
+    {
+     "text": "エ",
+     "pitch": 5.58
+    }
+   ]
+  }
+ ],
+ "皆さん全員が各自の目標を達成した": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ミ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.64
+    },
+    {
+     "text": "サ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ン",
+     "pitch": 5.34
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ゼ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ン",
+     "pitch": 5.37
+    },
+    {
+     "text": "イ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ン",
+     "pitch": 5.35
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.31
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ク",
+     "pitch": 5.57
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "モ",
+     "pitch": 5.09
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ヒョ",
+     "pitch": 5.31
+    },
+    {
+     "text": "オ",
+     "pitch": 5.28
+    },
+    {
+     "text": "オ",
+     "pitch": 5.25
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.22
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.24
+    },
+    {
+     "text": "エ",
+     "pitch": 5.2
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "短縮": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ン",
+     "pitch": 5.68
+    },
+    {
+     "text": "シュ",
+     "pitch": 0
+    },
+    {
+     "text": "ク",
+     "pitch": 5.37
+    }
+   ]
+  }
+ ],
+ "この会社が労働時間を短縮した目的は何ですか": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.59
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.6
+    },
+    {
+     "text": "イ",
+     "pitch": 5.55
+    },
+    {
+     "text": "シャ",
+     "pitch": 5.55
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.49
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ロ",
+     "pitch": 5.45
+    },
+    {
+     "text": "オ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ド",
+     "pitch": 5.47
+    },
+    {
+     "text": "オ",
+     "pitch": 5.47
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ジ",
+     "pitch": 5.3
+    },
+    {
+     "text": "カ",
+     "pitch": 5.46
+    },
+    {
+     "text": "ン",
+     "pitch": 5.45
+    },
+    {
+     "text": "オ",
+     "pitch": 5.44
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ン",
+     "pitch": 5.46
+    },
+    {
+     "text": "シュ",
+     "pitch": 0
+    },
+    {
+     "text": "ク",
+     "pitch": 5.48
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.4
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "モ",
+     "pitch": 5.3
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.39
+    },
+    {
+     "text": "キ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.31
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.36
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.5
+    },
+    {
+     "text": "デ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.09
+    }
+   ]
+  }
+ ],
+ "調子": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "チョ",
+     "pitch": 5.81
+    },
+    {
+     "text": "オ",
+     "pitch": 5.91
+    },
+    {
+     "text": "シ",
+     "pitch": 5.06
+    }
+   ]
+  }
+ ],
+ "エンジンの調子は良くない": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "エ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ン",
+     "pitch": 5.81
+    },
+    {
+     "text": "ジ",
+     "pitch": 5.47
+    },
+    {
+     "text": "ン",
+     "pitch": 5.27
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "チョ",
+     "pitch": 5.29
+    },
+    {
+     "text": "オ",
+     "pitch": 5.29
+    },
+    {
+     "text": "シ",
+     "pitch": 5.29
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.24
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヨ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ク",
+     "pitch": 5.42
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.1
+    },
+    {
+     "text": "イ",
+     "pitch": 5.01
+    }
+   ]
+  }
+ ],
+ "納得": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.3
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.63
+    },
+    {
+     "text": "ク",
+     "pitch": 5.07
+    }
+   ]
+  }
+ ],
+ "理由があるなら私も納得できる": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "リ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ユ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.64
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.58
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.62
+    },
+    {
+     "text": "ル",
+     "pitch": 5.58
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.34
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ワ",
+     "pitch": 5.05
+    },
+    {
+     "text": "タ",
+     "pitch": 5.32
+    },
+    {
+     "text": "シ",
+     "pitch": 5.45
+    },
+    {
+     "text": "モ",
+     "pitch": 5.4
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ナ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.38
+    },
+    {
+     "text": "ク",
+     "pitch": 5.39
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "デ",
+     "pitch": 5.3
+    },
+    {
+     "text": "キ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ル",
+     "pitch": 5.07
+    }
+   ]
+  }
+ ],
+ "狙い": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ネ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.52
+    },
+    {
+     "text": "イ",
+     "pitch": 5.49
+    }
+   ]
+  }
+ ],
+ "学生数を確保したいという大学側の狙いもある": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ガ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "セ",
+     "pitch": 5.8
+    },
+    {
+     "text": "エ",
+     "pitch": 5.76
+    },
+    {
+     "text": "ス",
+     "pitch": 5.42
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.24
+    },
+    {
+     "text": "オ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "カ",
+     "pitch": 5.41
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ホ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.29
+    },
+    {
+     "text": "イ",
+     "pitch": 5.25
+    },
+    {
+     "text": "ト",
+     "pitch": 5.15
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "イ",
+     "pitch": 5.1
+    },
+    {
+     "text": "ウ",
+     "pitch": 5.04
+    }
+   ]
+  },
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "ダ",
+     "pitch": 5.04
+    },
+    {
+     "text": "イ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.32
+    },
+    {
+     "text": "ク",
+     "pitch": 5.42
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.34
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ネ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ラ",
+     "pitch": 5.3
+    },
+    {
+     "text": "イ",
+     "pitch": 5.31
+    },
+    {
+     "text": "モ",
+     "pitch": 5.26
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.2
+    },
+    {
+     "text": "ル",
+     "pitch": 5.02
+    }
+   ]
+  }
+ ],
+ "納期": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ノ",
+     "pitch": 5.6
+    },
+    {
+     "text": "オ",
+     "pitch": 5.79
+    },
+    {
+     "text": "キ",
+     "pitch": 4.92
+    }
+   ]
+  }
+ ],
+ "納期どうり品物を納める": [
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "ノ",
+     "pitch": 5.57
+    },
+    {
+     "text": "オ",
+     "pitch": 5.73
+    },
+    {
+     "text": "キ",
+     "pitch": 5.65
+    },
+    {
+     "text": "ド",
+     "pitch": 5.56
+    },
+    {
+     "text": "オ",
+     "pitch": 5.58
+    },
+    {
+     "text": "リ",
+     "pitch": 5.56
+    },
+    {
+     "text": "シ",
+     "pitch": 5.53
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.49
+    },
+    {
+     "text": "モ",
+     "pitch": 5.29
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.14
+    },
+    {
+     "text": "オ",
+     "pitch": 5.05
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.05
+    },
+    {
+     "text": "サ",
+     "pitch": 5.23
+    },
+    {
+     "text": "メ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ル",
+     "pitch": 5.02
+    }
+   ]
+  }
+ ],
+ "品物": [
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.54
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.66
+    },
+    {
+     "text": "モ",
+     "pitch": 5.72
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.35
+    }
+   ]
+  }
+ ],
+ "廃棄": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.82
+    },
+    {
+     "text": "イ",
+     "pitch": 5.88
+    },
+    {
+     "text": "キ",
+     "pitch": 4.87
+    }
+   ]
+  }
+ ],
+ "この資料は全て廃棄してください": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "コ",
+     "pitch": 5.52
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.65
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 5.76
+    },
+    {
+     "text": "リョ",
+     "pitch": 5.59
+    },
+    {
+     "text": "オ",
+     "pitch": 5.31
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.1
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ス",
+     "pitch": 5.51
+    },
+    {
+     "text": "ベ",
+     "pitch": 5.51
+    },
+    {
+     "text": "テ",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ハ",
+     "pitch": 5.39
+    },
+    {
+     "text": "イ",
+     "pitch": 5.46
+    },
+    {
+     "text": "キ",
+     "pitch": 5.24
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "テ",
+     "pitch": 5.11
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ク",
+     "pitch": 5.15
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.1
+    },
+    {
+     "text": "サ",
+     "pitch": 5.15
+    },
+    {
+     "text": "イ",
+     "pitch": 5.02
+    }
+   ]
+  }
+ ],
+ "一言": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.77
+    },
+    {
+     "text": "コ",
+     "pitch": 5.28
+    },
+    {
+     "text": "ト",
+     "pitch": 4.89
+    }
+   ]
+  }
+ ],
+ "先生、明日のリーさんの送別会、最後に一言頂戴したいんです": [
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "セ",
+     "pitch": 5.7
+    },
+    {
+     "text": "ン",
+     "pitch": 5.68
+    },
+    {
+     "text": "セ",
+     "pitch": 5.58
+    },
+    {
+     "text": "エ",
+     "pitch": 5.27
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.2
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.55
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "リ",
+     "pitch": 5.51
+    },
+    {
+     "text": "イ",
+     "pitch": 5.58
+    },
+    {
+     "text": "サ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ン",
+     "pitch": 5.25
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.27
+    },
+    {
+     "text": "オ",
+     "pitch": 5.26
+    },
+    {
+     "text": "ベ",
+     "pitch": 5.24
+    },
+    {
+     "text": "ツ",
+     "pitch": 5.14
+    },
+    {
+     "text": "カ",
+     "pitch": 5.13
+    },
+    {
+     "text": "イ",
+     "pitch": 5.03
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "サ",
+     "pitch": 5.6
+    },
+    {
+     "text": "イ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ゴ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ニ",
+     "pitch": 5.15
+    }
+   ]
+  },
+  {
+   "accent": 7,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.34
+    },
+    {
+     "text": "コ",
+     "pitch": 5.44
+    },
+    {
+     "text": "ト",
+     "pitch": 5.44
+    },
+    {
+     "text": "チョ",
+     "pitch": 5.48
+    },
+    {
+     "text": "オ",
+     "pitch": 5.43
+    },
+    {
+     "text": "ダ",
+     "pitch": 5.44
+    },
+    {
+     "text": "イ",
+     "pitch": 5.41
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "タ",
+     "pitch": 5.25
+    },
+    {
+     "text": "イ",
+     "pitch": 5.23
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ン",
+     "pitch": 5.14
+    },
+    {
+     "text": "デ",
+     "pitch": 5
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "その主な原因は、資金不足と人手不足です": [
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ソ",
+     "pitch": 5.51
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.63
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "オ",
+     "pitch": 5.71
+    },
+    {
+     "text": "モ",
+     "pitch": 5.63
+    },
+    {
+     "text": "ナ",
+     "pitch": 5.35
+    }
+   ]
+  },
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ゲ",
+     "pitch": 5.2
+    },
+    {
+     "text": "ン",
+     "pitch": 5.24
+    },
+    {
+     "text": "イ",
+     "pitch": 5.23
+    },
+    {
+     "text": "ン",
+     "pitch": 5.21
+    },
+    {
+     "text": "ワ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "キ",
+     "pitch": 5.69
+    },
+    {
+     "text": "ン",
+     "pitch": 5.71
+    },
+    {
+     "text": "フ",
+     "pitch": 5.6
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.45
+    },
+    {
+     "text": "ク",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.08
+    }
+   ]
+  },
+  {
+   "accent": 4,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 0
+    },
+    {
+     "text": "ト",
+     "pitch": 5.38
+    },
+    {
+     "text": "デ",
+     "pitch": 5.39
+    },
+    {
+     "text": "ブ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ソ",
+     "pitch": 5.35
+    },
+    {
+     "text": "ク",
+     "pitch": 5.18
+    },
+    {
+     "text": "デ",
+     "pitch": 5.03
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    }
+   ]
+  }
+ ],
+ "費用": [
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 5.97
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.73
+    },
+    {
+     "text": "オ",
+     "pitch": 5.04
+    }
+   ]
+  }
+ ],
+ "人間ドックを受ける場合、確か費用の補助があるんですよね": [
+  {
+   "accent": 5,
+   "moras": [
+    {
+     "text": "ニ",
+     "pitch": 5.61
+    },
+    {
+     "text": "ン",
+     "pitch": 5.71
+    },
+    {
+     "text": "ゲ",
+     "pitch": 5.62
+    },
+    {
+     "text": "ン",
+     "pitch": 5.6
+    },
+    {
+     "text": "ド",
+     "pitch": 5.59
+    },
+    {
+     "text": "ッ",
+     "pitch": 0
+    },
+    {
+     "text": "ク",
+     "pitch": 5.34
+    },
+    {
+     "text": "オ",
+     "pitch": 5.14
+    }
+   ]
+  },
+  {
+   "accent": 2,
+   "moras": [
+    {
+     "text": "ウ",
+     "pitch": 5.1
+    },
+    {
+     "text": "ケ",
+     "pitch": 5.42
+    },
+    {
+     "text": "ル",
+     "pitch": 5.3
+    }
+   ]
+  },
+  {
+   "accent": 3,
+   "moras": [
+    {
+     "text": "バ",
+     "pitch": 5.14
+    },
+    {
+     "text": "ア",
+     "pitch": 5.14
+    },
+    {
+     "text": "イ",
+     "pitch": 5.12
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "タ",
+     "pitch": 5.58
+    },
+    {
+     "text": "シ",
+     "pitch": 0
+    },
+    {
+     "text": "カ",
+     "pitch": 5.25
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ヒ",
+     "pitch": 5.48
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.55
+    },
+    {
+     "text": "オ",
+     "pitch": 5.37
+    },
+    {
+     "text": "ノ",
+     "pitch": 5.17
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ホ",
+     "pitch": 5.45
+    },
+    {
+     "text": "ジョ",
+     "pitch": 5.4
+    },
+    {
+     "text": "ガ",
+     "pitch": 5.15
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ア",
+     "pitch": 5.21
+    },
+    {
+     "text": "ル",
+     "pitch": 5.34
+    }
+   ]
+  },
+  {
+   "accent": 1,
+   "moras": [
+    {
+     "text": "ン",
+     "pitch": 5.24
+    },
+    {
+     "text": "デ",
+     "pitch": 5.11
+    },
+    {
+     "text": "ス",
+     "pitch": 0
+    },
+    {
+     "text": "ヨ",
+     "pitch": 5.02
+    },
+    {
+     "text": "ネ",
+     "pitch": 5.05
+    }
+   ]
+  }
+ ]
+}

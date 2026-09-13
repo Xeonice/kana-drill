@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
-import { japaneseVoices, setVoice, speak, voiceName } from "../lib/speech";
+import { japaneseVoices, setVoice, voiceName } from "../lib/speech";
+import { speak } from "../lib/tts";
 import { qualityOf, type Quality } from "../lib/voiceQuality";
 
 const KEY = "kana-drill:voice";
@@ -52,7 +53,7 @@ export function useVoice(canSpeak: boolean) {
   }, []);
 
   /** 换音色时念一句样本，直接听出差别。 */
-  const preview = useCallback((text = "向上") => speak(text), []);
+  const preview = useCallback((text = "向上") => void speak(text), []);
 
   const quality = current ? qualityOf(current) : null;
 

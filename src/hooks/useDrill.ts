@@ -13,6 +13,7 @@ import {
 import { buildPlan, startSession, type Plan, type Size } from "../lib/session";
 import { fetchArchive, pushArchive, type SyncState } from "../lib/cloud";
 import { onVoicesReady, speechAvailable } from "../lib/speech";
+import { hasClips } from "../lib/tts";
 
 export type Phase = "start" | "drill" | "done";
 
@@ -42,8 +43,12 @@ export function useDrill() {
   const latest = useRef<Archive>(archive);
   latest.current = archive;
 
-  // 语音列表是异步填充的，就绪后再点亮听力模式
+  // 预生成音频恒定可用；系统语音要等列表异步填充好
   useEffect(() => {
+    if (hasClips()) {
+      setCanSpeak(true);
+      return;
+    }
     setCanSpeak(speechAvailable());
     return onVoicesReady(() => setCanSpeak(speechAvailable()));
   }, []);

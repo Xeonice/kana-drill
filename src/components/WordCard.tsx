@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import type { Card, Mode, Origin, WordStat } from "../types";
 import { BOX_LABEL, MODE_SHORT } from "../lib/archive";
-import { speak } from "../lib/speech";
+import { accentsOf, speak } from "../lib/tts";
+import { PitchCurve, accentName } from "./PitchCurve";
 
 type Props = {
   card: Card;
@@ -43,10 +44,14 @@ export function WordCard({
   // 片假名外来语的 kanji 就是它本身，照样正确。
   const spoken = card.kanji;
 
+  const phrases = accentsOf(spoken);
+  // 有预生成音频就能播，没有才依赖系统语音
+  const playable = canSpeak || phrases !== null;
+
   // 听力模式：换一张卡就先念一遍，省得每次都要点
   useEffect(() => {
-    if (mode === "audio" && canSpeak && !revealed) speak(spoken);
-  }, [mode, canSpeak, revealed, spoken]);
+    if (mode === "audio" && playable && !revealed) void speak(spoken);
+  }, [mode, playable, revealed, spoken]);
 
   return (
     <div className="card">
@@ -64,7 +69,7 @@ export function WordCard({
           <button
             type="button"
             className="speak-big"
-            onClick={() => speak(spoken)}
+            onClick={() => void speak(spoken)}
             aria-label="もう一度聞く"
           >
             <SoundIcon />
@@ -86,16 +91,25 @@ export function WordCard({
             </>
           )}
 
+          {phrases && (
+            <div className="pitch-block">
+              <PitchCurve phrases={phrases} />
+              {accentName(phrases) && (
+                <span className="pitch-name">{accentName(phrases)}</span>
+              )}
+            </div>
+          )}
+
           <div className="gloss">{card.gloss}</div>
 
-          {canSpeak && (
+          {playable && (
             <div className="speak-row">
-              <button type="button" className="speak" onClick={() => speak(spoken)}>
+              <button type="button" className="speak" onClick={() => void speak(spoken)}>
                 <SoundIcon />
                 単語を読む
               </button>
               {card.example && (
-                <button type="button" className="speak" onClick={() => speak(card.example)}>
+                <button type="button" className="speak" onClick={() => void speak(card.example)}>
                   <SoundIcon />
                   例文を読む
                 </button>

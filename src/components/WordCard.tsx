@@ -53,6 +53,12 @@ export function WordCard({
     if (mode === "audio" && playable && !revealed) void speak(spoken);
   }, [mode, playable, revealed, spoken]);
 
+  // 翻面就念一遍 —— 看到写法的同时听到读音，音形对得上才记得住。
+  // 翻面本身是点击或按键触发的，带着用户手势，不会被自动播放策略拦下。
+  useEffect(() => {
+    if (revealed && playable) void speak(spoken);
+  }, [revealed, playable, spoken]);
+
   return (
     <div className="card">
       <div className="card-tags">

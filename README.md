@@ -67,6 +67,17 @@ docker rm -f voicevox
 脚本只合成新增的文本，已有的音频复用，删掉的词条留下的孤儿文件会被清理。
 换音色用 `VOICEVOX_SPEAKER=31 npm run voices`（31 是 No.7 読み聞かせ）。
 
+生成完跑一次读音校验：
+
+```bash
+npm run check:readings
+```
+
+它把笔记里的假名和 VOICEVOX 的实际读音逐词比对。不一致有两种可能 ——
+笔记抄错了（假名模式会教错读音），或 VOICEVOX 词典判断有误（听力模式会念错），
+两种都值得看一眼。比对前会归一化长音写法（`こう`／`こお`、片假名长音符），
+否则全是误报。
+
 ### 退路：系统语音
 
 没有预生成音频的文本（比如刚加完词单还没跑脚本）自动退回浏览器自带的 Web Speech API。
@@ -153,5 +164,6 @@ src/
   components/PitchCurve.tsx   音高重音曲线
 api/archive.ts         读写 Upstash Redis 的 Serverless Function
 scripts/generate-voices.mjs  用 VOICEVOX 烤音频与音高数据
+scripts/check-readings.mjs   校验笔记假名与 VOICEVOX 读音是否一致
 public/audio/          预生成的音频（132 条 / 2.3 MB）
 ```

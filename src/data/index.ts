@@ -3,12 +3,13 @@ import { day3 } from "./decks/day3";
 import { day4 } from "./decks/day4";
 import { day5 } from "./decks/day5";
 import { day6 } from "./decks/day6";
+import { day7 } from "./decks/day7";
 
 /**
  * 全部词单。新增一天：在 decks/ 下加一个文件，然后挂到这个数组末尾。
  * deck.id 是长期档案的键的一部分，注册之后不要再改，否则历史成绩会对不上。
  */
-export const DECKS: Deck[] = [day3, day4, day5, day6];
+export const DECKS: Deck[] = [day3, day4, day5, day6, day7];
 
 export function cardKey(deckId: string, wordId: number): string {
   return `${deckId}:${wordId}`;
